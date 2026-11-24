@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Departamento en Venta · 343.97 m² | Lomas de Tecamachalco</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --bg: #faf8f5;
+      --card: #ffffff;
+      --stage-bg: #f3efe8;
+      --text: #1c1917;
+      --muted: #57534e;
+      --gold: #9a6f1a;
+      --gold-hover: #7d5913;
+      --gold-light: #f6efe0;
+      --gold-border: #dec692;
+      --border: #e6e0d6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html { scroll-behavior: smooth; max-width: 100%; overflow-x: hidden; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+    /* Barra Superior */
+    .top-bar {
+      position: sticky; top: 0; z-index: 40;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 20px;
+      box-shadow: 0 2px 12px rgba(28, 25, 23, 0.05);
+    }
+    .top-bar-inner {
+      max-width: 1180px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .brand-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-shrink: 0; }
+    .brand {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--text); text-decoration: none;
+    }
+    .brand-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .nav-wrapper { display: flex; align-items: center; gap: 6px; flex: 1; justify-content: flex-end; min-width: 0; }
+    .nav-scroll-btn {
+      width: 28px; height: 28px; border-radius: 50%;
+      border: 1.5px solid var(--gold-border); background: var(--gold-light); color: var(--gold);
+      font-size: 18px; font-weight: 700; line-height: 1;
+      display: inline-flex; align-items: center; justify-content: center;
+      cursor: pointer; flex-shrink: 0; transition: all 0.15s ease;
+      box-shadow: 0 2px 6px rgba(154, 111, 26, 0.12); user-select: none;
+    }
+    .nav-scroll-btn:hover { background: var(--gold); color: #fff; border-color: var(--gold); transform: scale(1.06); }
+    .nav-pills {
+      display: flex; align-items: center; gap: 6px; overflow-x: auto; white-space: nowrap;
+      scrollbar-width: none; -ms-overflow-style: none; padding: 2px 4px; scroll-behavior: smooth;
+      mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+    }
+    .nav-pills::-webkit-scrollbar { display: none; }
+    .nav-pills a {
+      text-decoration: none; color: var(--muted); font-size: 11px; font-weight: 600;
+      padding: 6px 11px; border-radius: 999px; border: 1px solid var(--border);
+      background: var(--card); transition: all 0.15s ease; flex-shrink: 0;
+    }
+    .nav-pills a:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-light); }
+    .nav-pills a.video-pill { border-color: var(--gold-border); background: var(--gold-light); color: var(--gold); font-weight: 700; }
+    .btn-pdf {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--gold); color: #ffffff !important; border: 1px solid var(--gold);
+      font-size: 11.5px; font-weight: 700; padding: 7px 14px; border-radius: 999px;
+      text-decoration: none; flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(154, 111, 26, 0.25); transition: background 0.15s ease, transform 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-pdf:hover { background: var(--gold-hover); transform: translateY(-1px); }
+    .mobile-only-pdf { display: none; }
+
+    .container { max-width: 1180px; margin: 0 auto; padding: 20px 16px 56px; }
+
+    /* Hero Card */
+    .hero-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 22px;
+      padding: 24px 26px; margin-bottom: 24px;
+      box-shadow: 0 6px 20px rgba(28, 25, 23, 0.04); scroll-margin-top: 90px;
+    }
+    .hero-top {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; padding-bottom: 18px;
+      border-bottom: 1px solid var(--border); margin-bottom: 18px;
+    }
+    .badge {
+      display: inline-block; background: var(--gold-light); color: var(--gold);
+      border: 1px solid var(--gold-border); font-size: 10.5px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.14em; padding: 4px 12px;
+      border-radius: 999px; margin-bottom: 6px;
+    }
+    .hero-title { font-size: clamp(26px, 4.5vw, 36px); font-weight: 700; line-height: 1.1; color: var(--text); }
+    .hero-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .hero-badges-wrap { display: flex; align-items: stretch; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+    .price-pill-box {
+      background: linear-gradient(135deg, #1c1917 0%, #2c2620 100%);
+      border: 1.5px solid var(--gold); border-radius: 14px; padding: 10px 20px;
+      text-align: right; flex-shrink: 0; box-shadow: 0 6px 18px rgba(28, 25, 23, 0.14);
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .price-pill-box .kicker { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: #e8c27c; }
+    .price-pill-box .price-val {
+      font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(24px, 3.2vw, 30px);
+      font-weight: 700; color: #ffffff; line-height: 1.1; margin: 2px 0;
+    }
+    .price-pill-box .price-val span { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 700; color: #e8c27c; letter-spacing: 0.06em; }
+    .price-pill-box .small { font-size: 11px; color: #d6d0c6; }
+    .highlight-pill-box {
+      background: var(--gold-light); border: 1px solid var(--gold-border);
+      border-radius: 14px; padding: 10px 18px; text-align: center; flex-shrink: 0;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .highlight-pill-box .kicker { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); }
+    .highlight-pill-box .big { font-size: 18px; font-weight: 700; color: var(--text); }
+    .highlight-pill-box .small { font-size: 11px; color: var(--muted); }
+
+    .hero-showcase {
+      width: 100%; background: var(--stage-bg); border: 1px solid var(--border);
+      border-radius: 16px; overflow: hidden; margin-bottom: 18px; position: relative;
+    }
+    .hero-showcase img {
+      width: 100%; max-height: 490px; object-fit: cover; object-position: center;
+      display: block; cursor: zoom-in;
+    }
+    .hero-showcase-caption {
+      position: absolute; bottom: 12px; left: 12px; right: 12px;
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      pointer-events: none;
+    }
+    .hero-showcase-badge {
+      background: rgba(28, 25, 23, 0.78); backdrop-filter: blur(6px);
+      color: #fff; font-size: 11.5px; font-weight: 600;
+      padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .metrics-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+    .metric-item { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 12px 14px; }
+    .metric-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+    .metric-val { font-size: clamp(18px, 3vw, 22px); font-weight: 700; color: var(--text); margin-top: 2px; }
+    .metric-val span { font-size: 12.5px; color: var(--gold); }
+    .metric-note { font-size: 11px; color: var(--gold); font-weight: 600; margin-top: 2px; }
+
+    .levels-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .level-box { background: #fdfcfa; border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; }
+    .level-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+    .level-head span.num { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); }
+    .level-head span.tag { font-size: 10px; font-weight: 600; background: var(--gold-light); color: var(--gold); padding: 2px 8px; border-radius: 999px; }
+    .level-box h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+    .level-box p { font-size: 12px; color: var(--muted); line-height: 1.45; }
+
+    /* Barra de Contacto WhatsApp en Hero */
+    .hero-contact-strip {
+      margin-top: 16px; padding: 16px 22px; border-radius: 16px;
+      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+      border: 1.5px solid #86efac;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    }
+    .hero-contact-text { display: flex; flex-direction: column; gap: 3px; }
+    .hero-contact-text .kicker { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: #15803d; }
+    .hero-contact-text .title { font-size: 16px; font-weight: 700; color: #14532d; }
+    .hero-contact-buttons { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .wa-btn-pill {
+      display: inline-flex; align-items: center; gap: 11px; background: #ffffff;
+      border: 2px solid #22c55e; border-radius: 999px; padding: 8px 18px 8px 10px;
+      text-decoration: none; color: #1c1917; transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.12);
+    }
+    .wa-btn-pill:hover { background: #f0fdf4; border-color: #16a34a; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(22, 163, 74, 0.22); }
+    .wa-svg-circle {
+      width: 34px; height: 34px; border-radius: 50%; background: #25D366;
+      display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .wa-svg-circle svg { width: 20px; height: 20px; fill: #ffffff; display: block; }
+    .wa-btn-meta { display: flex; flex-direction: column; line-height: 1.18; }
+    .wa-btn-name { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #15803d; }
+    .wa-btn-phone { font-size: 15.5px; font-weight: 800; color: #1c1917; letter-spacing: 0.02em; }
+
+    /* Amenidades y Certeza Jurídica */
+    .amenities-section {
+      background: var(--card); border: 1px solid var(--border); border-radius: 22px;
+      padding: 22px 26px; margin-bottom: 24px;
+      box-shadow: 0 6px 20px rgba(28, 25, 23, 0.04); scroll-margin-top: 86px;
+    }
+    .amenities-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 14px;
+    }
+    .amenity-card {
+      background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 14px 15px;
+    }
+    .amenity-icon { font-size: 20px; margin-bottom: 6px; display: block; }
+    .amenity-card h4 { font-size: 13.5px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .amenity-card p { font-size: 11.8px; color: var(--muted); line-height: 1.45; }
+
+    /* Crédito Hipotecario */
+    .credit-section {
+      background: linear-gradient(180deg, #ffffff 0%, #fcfaf5 100%);
+      border: 1.5px solid var(--gold-border); border-radius: 22px;
+      padding: 24px 26px; margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(154, 111, 26, 0.07); scroll-margin-top: 86px;
+    }
+    .credit-top {
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 18px;
+      flex-wrap: wrap; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border);
+    }
+    .credit-title { font-size: clamp(22px, 3.6vw, 28px); font-weight: 700; color: var(--text); line-height: 1.15; margin-top: 3px; }
+    .credit-desc { font-size: 13px; color: var(--muted); margin-top: 6px; max-width: 720px; line-height: 1.5; }
+    .credit-price-tag {
+      background: var(--gold-light); border: 1px solid var(--gold-border);
+      border-radius: 12px; padding: 10px 16px; text-align: right; flex-shrink: 0;
+    }
+    .credit-price-tag .lbl { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); }
+    .credit-price-tag .val { font-size: 19px; font-weight: 700; color: var(--text); margin-top: 2px; }
+    .banks-sub-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin: 4px 0 8px; }
+    .banks-featured-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 14px; }
+    .banks-secondary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
+    .bank-card {
+      background: #ffffff; border: 1.5px solid var(--border); border-radius: 16px;
+      padding: 13px 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 7px; min-height: 86px; transition: all 0.2s ease; box-shadow: 0 3px 10px rgba(28, 25, 23, 0.03);
+    }
+    .bank-card.featured {
+      background: linear-gradient(180deg, #ffffff 0%, #fcf8ef 100%);
+      border: 2px solid var(--gold); border-radius: 18px; padding: 20px 22px; min-height: 138px; gap: 10px;
+      box-shadow: 0 8px 22px rgba(154, 111, 26, 0.10);
+    }
+    .bank-card:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(154, 111, 26, 0.14); }
+    .bank-logo-wrap { width: 100%; height: 32px; display: flex; align-items: center; justify-content: center; }
+    .bank-card.featured .bank-logo-wrap { height: 58px; }
+    .bank-logo-wrap img { max-width: 128px; max-height: 28px; width: auto; height: auto; display: block; }
+    .bank-card.featured .bank-logo-wrap img { max-width: 225px; max-height: 52px; }
+    .bank-tag { font-size: 10px; font-weight: 600; color: var(--muted); background: var(--bg); border: 1px solid var(--border); padding: 2.5px 9px; border-radius: 999px; }
+    .bank-card.featured .bank-tag { font-size: 11px; font-weight: 700; color: var(--text); background: #ffffff; border-color: var(--gold-border); padding: 4px 13px; }
+    .credit-perks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .credit-perk { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; font-size: 12px; font-weight: 600; color: var(--text); display: flex; align-items: center; gap: 8px; }
+    .credit-perk span.check { width: 20px; height: 20px; border-radius: 50%; background: var(--gold); color: #fff; font-size: 11px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+    /* Carruseles */
+    .carousel-section {
+      background: var(--card); border: 1px solid var(--border); border-radius: 22px;
+      overflow: hidden; margin-bottom: 24px; box-shadow: 0 8px 24px rgba(28, 25, 23, 0.04);
+      scroll-margin-top: 86px; width: 100%;
+    }
+    .sec-header { padding: 14px 22px; border-bottom: 1px solid var(--border); background: #fdfcfa; }
+    .sec-kicker { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); }
+    .sec-title { font-size: clamp(20px, 3.5vw, 25px); font-weight: 700; color: var(--text); line-height: 1.15; margin-top: 2px; }
+    .sec-desc { font-size: 12px; color: var(--muted); margin-top: 3px; }
+    .carousel-split { display: grid; grid-template-columns: minmax(0, 64fr) minmax(0, 36fr); align-items: stretch; width: 100%; }
+    .stage-column {
+      background: var(--stage-bg); padding: 14px 18px; display: flex; flex-direction: column;
+      justify-content: space-between; border-right: 1px solid var(--border); min-width: 0; width: 100%;
+    }
+    .stage-frame {
+      position: relative; width: 100%; height: 410px; background: #ffffff; border-radius: 14px;
+      border: 1px solid var(--border); overflow: hidden; user-select: none; touch-action: pan-y pinch-zoom;
+    }
+    .stage-frame img { width: 100%; height: 100%; object-fit: contain; display: block; padding: 6px; cursor: zoom-in; }
+    .stage-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%); width: 38px; height: 38px; border-radius: 50%;
+      background: rgba(255, 255, 255, 0.94); border: 1px solid var(--border); color: var(--text);
+      font-size: 20px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+      cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14); transition: all 0.15s ease; z-index: 5;
+    }
+    .stage-arrow:hover { background: var(--gold); color: #ffffff; border-color: var(--gold); }
+    .stage-arrow.prev { left: 10px; }
+    .stage-arrow.next { right: 10px; }
+    .zoom-hint {
+      position: absolute; bottom: 10px; right: 10px; background: rgba(28, 25, 23, 0.72);
+      color: #fff; font-size: 10px; font-weight: 600; padding: 3px 9px; border-radius: 999px; pointer-events: none;
+    }
+    .stage-caption-bar {
+      margin-top: 10px; background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;
+    }
+    .stage-caption-text { min-width: 0; flex: 1; }
+    .stage-caption-text h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13.5px; font-weight: 700; color: var(--text); }
+    .stage-caption-text p { font-size: 11.5px; color: var(--muted); margin-top: 1px; }
+    .stage-counter {
+      flex-shrink: 0; background: var(--gold-light); color: var(--gold); border: 1px solid var(--gold-border);
+      font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 999px;
+    }
+    .selector-column {
+      padding: 14px 16px; background: var(--card); display: flex; flex-direction: column;
+      justify-content: flex-start; gap: 8px; min-width: 0; width: 100%; max-height: 495px;
+    }
+    .selector-header { display: flex; align-items: center; justify-content: space-between; padding-bottom: 6px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+    .selector-header span { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+    .selector-nav-btns { display: flex; gap: 6px; }
+    .btn-mini {
+      background: var(--bg); border: 1px solid var(--border); color: var(--text);
+      font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 8px; cursor: pointer; transition: all 0.15s ease;
+    }
+    .btn-mini:hover { background: var(--gold); color: #fff; border-color: var(--gold); }
+    .thumb-list { display: flex; flex-direction: column; gap: 6px; flex: 1; overflow-y: auto; padding-right: 2px; width: 100%; }
+    .thumb-row {
+      display: flex; align-items: center; gap: 10px; padding: 6px 9px; border-radius: 11px;
+      border: 1.5px solid var(--border); background: var(--bg); cursor: pointer; text-align: left;
+      transition: all 0.15s ease; width: 100%; min-width: 0; flex-shrink: 0;
+    }
+    .thumb-row:hover { border-color: var(--gold-border); background: #fdfaf3; }
+    .thumb-row.active { border-color: var(--gold); background: var(--gold-light); box-shadow: 0 2px 8px rgba(154, 111, 26, 0.14); }
+    .thumb-img-box { width: 58px; height: 44px; border-radius: 7px; background: #fff; border: 1px solid var(--border); overflow: hidden; flex-shrink: 0; }
+    .thumb-img-box img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    .thumb-info { flex: 1; min-width: 0; }
+    .thumb-num { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold); }
+    .thumb-title { font-size: 12px; font-weight: 700; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .thumb-sub { font-size: 10.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    /* Sección Contacto Inferior */
+    .contact-section {
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+      border: 2px solid #22c55e; border-radius: 24px; padding: 28px 30px;
+      margin-bottom: 24px; box-shadow: 0 12px 32px rgba(22, 163, 74, 0.10); scroll-margin-top: 86px;
+    }
+    .contact-sec-header {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      gap: 20px; flex-wrap: wrap; margin-bottom: 22px; padding-bottom: 16px; border-bottom: 1px solid #bbf7d0;
+    }
+    .contact-sec-title { font-size: 28px; font-weight: 700; color: #1c1917; margin: 4px 0 6px; }
+    .contact-sec-desc { font-size: 14px; color: #44403c; max-width: 680px; }
+    .contact-cards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .wa-card-large {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      background: #ffffff; border: 2px solid #22c55e; border-radius: 18px; padding: 18px 22px;
+      text-decoration: none; color: #1c1917; transition: all 0.2s ease;
+      box-shadow: 0 4px 16px rgba(22, 163, 74, 0.10);
+    }
+    .wa-card-large:hover { background: #f0fdf4; border-color: #16a34a; transform: translateY(-2px); box-shadow: 0 10px 24px rgba(22, 163, 74, 0.20); }
+    .wa-card-left { display: flex; align-items: center; gap: 14px; }
+    .wa-card-large .wa-svg-circle { width: 48px; height: 48px; }
+    .wa-card-large .wa-svg-circle svg { width: 27px; height: 27px; }
+    .wa-card-large .wa-btn-name { font-size: 13px; color: #15803d; }
+    .wa-card-large .wa-btn-phone { font-size: 21px; color: #1c1917; margin-top: 2px; }
+    .wa-card-cta { font-size: 12.5px; font-weight: 700; color: #ffffff; background: #16a34a; padding: 10px 18px; border-radius: 999px; white-space: nowrap; flex-shrink: 0; }
+
+    .footer-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+      padding: 24px 26px; display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 18px; box-shadow: 0 6px 20px rgba(28, 25, 23, 0.04);
+    }
+    .footer-card h3 { font-size: 22px; font-weight: 700; margin-top: 2px; }
+    .footer-card p { font-size: 12.5px; color: var(--muted); max-width: 640px; margin-top: 4px; }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 100; background: rgba(15, 14, 13, 0.94);
+      backdrop-filter: blur(6px); display: none; flex-direction: column;
+      align-items: center; justify-content: center; padding: 16px;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-close {
+      background: rgba(255, 255, 255, 0.16); color: #fff; border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 8px 18px; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; margin-bottom: 12px;
+    }
+    .lightbox img { max-width: 95vw; max-height: 80vh; object-fit: contain; border-radius: 10px; background: #fff; padding: 3px; }
+    .lightbox-caption { color: #fff; font-size: 13px; font-weight: 600; margin-top: 10px; text-align: center; }
+
+    @media (max-width: 860px) {
+      .mobile-only-pdf { display: inline-flex !important; padding: 5px 10px; font-size: 10.5px; }
+      .desktop-only-pdf { display: none !important; }
+      .top-bar { padding: 8px 12px; width: 100%; }
+      .top-bar-inner { flex-direction: column; align-items: stretch; gap: 7px; width: 100%; min-width: 0; }
+      .brand-row { width: 100%; min-width: 0; }
+      .brand { font-size: 10.5px; letter-spacing: 0.06em; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .nav-wrapper { width: 100%; justify-content: flex-start; min-width: 0; overflow: hidden; }
+      .nav-pills { flex: 1; min-width: 0; }
+      .container { padding: 12px 10px 44px; width: 100%; max-width: 100%; }
+      .hero-card, .amenities-section, .credit-section, .contact-section { padding: 15px; border-radius: 18px; margin-bottom: 16px; width: 100%; min-width: 0; }
+      .hero-top { flex-direction: column; align-items: flex-start; gap: 12px; width: 100%; }
+      .hero-badges-wrap { width: 100%; flex-direction: column; gap: 10px; min-width: 0; }
+      .price-pill-box, .highlight-pill-box, .credit-price-tag { width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; text-align: left; padding: 12px 15px; gap: 3px; min-width: 0; }
+      .hero-showcase img { max-height: 240px; }
+      .hero-showcase-caption { flex-wrap: wrap; gap: 6px; bottom: 8px; left: 8px; right: 8px; }
+      .hero-showcase-badge { font-size: 10px; padding: 4px 10px; }
+      .metrics-row, .amenities-grid, .banks-secondary-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .metric-item, .amenity-card, .level-box { min-width: 0; }
+      .levels-grid, .banks-featured-grid, .credit-perks, .contact-cards-grid { grid-template-columns: 1fr; gap: 10px; }
+      .hero-contact-strip { padding: 14px; }
+      .hero-contact-buttons { width: 100%; }
+      .wa-btn-pill { width: 100%; }
+      .carousel-split { display: block; width: 100%; }
+      .stage-column { display: block; width: 100%; padding: 10px; border-right: none; border-bottom: 1px solid var(--border); }
+      .stage-frame { width: 100%; height: 240px; }
+      .selector-column { display: block; width: 100%; padding: 10px; max-height: none; }
+      .thumb-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(56px, 1fr)); gap: 6px; overflow: visible; }
+      .thumb-row { flex-direction: column; align-items: center; justify-content: center; padding: 4px; gap: 3px; }
+      .thumb-img-box { width: 100%; height: 44px; }
+      .thumb-title, .thumb-sub { display: none; }
+      .wa-card-large { padding: 14px 16px; }
+      .wa-card-large .wa-btn-phone { font-size: 18px; }
+      .wa-card-cta { padding: 8px 12px; font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div class="brand-row">
+        <a href="#inicio" class="brand">
+          <span class="brand-dot"></span>
+          <span>Lomas de Tecamachalco · Depto 602</span>
+        </a>
+        <a href="Brochure_Depa_Tecamachalco_Lomas_de_Tecamachalco.pdf?v=20261123_v1" target="_blank" download class="btn-pdf mobile-only-pdf">
+          📄 Descargar PDF
+        </a>
+      </div>
+
+      <div class="nav-wrapper">
+        <button type="button" class="nav-scroll-btn" onclick="document.getElementById('top-nav-pills').scrollBy({left: -260, behavior: 'smooth'})" title="Desplazar a la izquierda" aria-label="Anterior">‹</button>
+        <nav class="nav-pills" id="top-nav-pills">
+          <a href="#inicio">Ficha y Precio</a>
+          <a href="#sec-amenidades" class="video-pill">🏢 Edificio y Amenidades</a>
+          <a href="#sec-credito" class="video-pill">🏦 Crédito Bancario</a>
+          <a href="#sec-contacto" class="video-pill" style="border-color: #22c55e; background: #f0fdf4; color: #15803d;">💬 Contacto</a>
+          <a href="#sec-vestibulo">1. Vestíbulo</a>
+          <a href="#sec-estancia">2. Estancia y Comedor</a>
+          <a href="#sec-visitas">3. Medio Baño y Antecomedor</a>
+          <a href="#sec-cocina">4. Cocina y Servicio</a>
+          <a href="#sec-rec1">5. Suite Junior 1</a>
+          <a href="#sec-rec2">6. Suite Junior 2</a>
+          <a href="#sec-master">7. Master Suite</a>
+        </nav>
+        <button type="button" class="nav-scroll-btn" onclick="document.getElementById('top-nav-pills').scrollBy({left: 260, behavior: 'smooth'})" title="Desplazar a la derecha" aria-label="Siguiente">›</button>
+        <a href="Brochure_Depa_Tecamachalco_Lomas_de_Tecamachalco.pdf?v=20261123_v1" target="_blank" download class="btn-pdf desktop-only-pdf">
+          📄 Descargar PDF
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- PORTADA Y FICHA TÉCNICA -->
+    <section id="inicio" class="hero-card">
+      <div class="hero-top">
+        <div>
+          <span class="badge">Departamento Residencial en Venta · Lomas de Tecamachalco</span>
+          <h1 class="hero-title">Calle Fuente de Molinos N.º 43 · Depto 602</h1>
+          <p class="hero-sub">Col. Lomas de Tecamachalco, Naucalpan de Juárez, Edo. de Méx. · Piso 6 (En una sola planta)</p>
+        </div>
+        <div class="hero-badges-wrap">
+          <div class="price-pill-box">
+            <div>
+              <div class="kicker">Valor Comercial (Avalúo Nov 2026)</div>
+              <div class="price-val">$11,867,000.00 <span>MXN</span></div>
+            </div>
+            <div class="small">Aceptamos y tramitamos tu crédito hipotecario</div>
+          </div>
+          <div class="highlight-pill-box">
+            <div>
+              <div class="kicker">★ Diferenciador Único</div>
+              <div class="big">4 Cajones + Doble Elevador</div>
+            </div>
+            <div class="small">Elevador directo al depto y de servicio a cocina</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-showcase">
+        <img src="07_estancia_panoramica_amplia.jpg?v=20261123_v1" alt="Gran Estancia Panorámica en Lomas de Tecamachalco" onclick="openLightbox(this.src, 'Gran Estancia Social Panorámica · 343.97 m² en Lomas de Tecamachalco')" />
+        <div class="hero-showcase-caption">
+          <span class="hero-showcase-badge">📍 Fuente de Molinos 43 · Piso 6 · 343.97 m² en Una Sola Planta</span>
+          <span class="hero-showcase-badge">🔍 Clic para ampliar</span>
+        </div>
+      </div>
+
+      <div class="metrics-row">
+        <div class="metric-item">
+          <div class="metric-label">Superficie Construida</div>
+          <div class="metric-val">343.97 <span>m²</span></div>
+          <div class="metric-note">En una sola planta · 6.º Piso</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-label">Recámaras</div>
+          <div class="metric-val">3 <span>Suites</span></div>
+          <div class="metric-note">Cada una c/ baño y vestidor</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-label">Baños</div>
+          <div class="metric-val">3.5 <span>+ Serv.</span></div>
+          <div class="metric-note">3 Suites + Visitas + Servicio</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-label">Estacionamiento</div>
+          <div class="metric-val">4 <span>Autos</span></div>
+          <div class="metric-note">2 en escritura + 2 adquiridos</div>
+        </div>
+      </div>
+
+      <div class="levels-grid">
+        <div class="level-box">
+          <div class="level-head">
+            <span class="num">Zona 01</span>
+            <span class="tag">Acceso y Área Social</span>
+          </div>
+          <h3>Elevador Directo, Estancia y Comedor</h3>
+          <p>Elevador principal con acceso directo al departamento, vestíbulo en mármol y caoba con puertas francesas, gran estancia con candil de cristal, comedor, estudio con librero y medio baño de visitas.</p>
+        </div>
+        <div class="level-box">
+          <div class="level-head">
+            <span class="num">Zona 02</span>
+            <span class="tag">Cocina y Servicio</span>
+          </div>
+          <h3>Cocina + Elevador de Servicio</h3>
+          <p>Antecomedor en madera cálida, amplísima cocina integral con puerta de <strong>elevador de servicio directo a la cocina</strong>, alacena walk-in, cuarto de lavado ventilado y cuarto de servicio con baño.</p>
+        </div>
+        <div class="level-box">
+          <div class="level-head">
+            <span class="num">Zona 03</span>
+            <span class="tag">3 Suites Privadas</span>
+          </div>
+          <h3>3 Recámaras con Vestidor y Baño</h3>
+          <p>Pasillo en mármol hacia 3 amplias recámaras: todas cuentan con vestidor walk-in y baño completo privado. La Recámara Principal destaca por su enorme baño panorámico arbolado.</p>
+        </div>
+      </div>
+
+      <!-- Barra de Contacto Directo por WhatsApp -->
+      <div class="hero-contact-strip">
+        <div class="hero-contact-text">
+          <span class="kicker">Atención Personalizada · Informes y Citas</span>
+          <span class="title">Agenda tu visita o solicita informes directamente por WhatsApp:</span>
+        </div>
+        <div class="hero-contact-buttons">
+          <a href="https://wa.me/525518441995?text=Hola%20Bernardo,%20me%20interesa%20el%20departamento%20en%20venta%20en%20Fuente%20de%20Molinos%2043%20Depto%20602,%20Lomas%20de%20Tecamachalco%20($11,867,000%20MXN)." target="_blank" rel="noopener" class="wa-btn-pill"><span class="wa-svg-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.83-.11-.42-.13-.97-.31-1.67-.61-2.94-1.27-4.86-4.23-5.01-4.43-.15-.2-1.2-1.59-1.2-3.04 0-1.45.76-2.16 1.03-2.46.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.24.59.83 2.04.9 2.19.07.15.12.32.02.52-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.61.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.31 2.38 1.46.3.15.47.12.64-.07.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.49.22.57.35.07.12.07.72-.17 1.4z"/></svg></span><span class="wa-btn-meta"><span class="wa-btn-name">Bernardo</span><span class="wa-btn-phone">55 1844 1995</span></span></a>
+          <a href="https://wa.me/525517263669?text=Hola%20Diego,%20me%20interesa%20el%20departamento%20en%20venta%20en%20Fuente%20de%20Molinos%2043%20Depto%20602,%20Lomas%20de%20Tecamachalco%20($11,867,000%20MXN)." target="_blank" rel="noopener" class="wa-btn-pill"><span class="wa-svg-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.83-.11-.42-.13-.97-.31-1.67-.61-2.94-1.27-4.86-4.23-5.01-4.43-.15-.2-1.2-1.59-1.2-3.04 0-1.45.76-2.16 1.03-2.46.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.24.59.83 2.04.9 2.19.07.15.12.32.02.52-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.61.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.31 2.38 1.46.3.15.47.12.64-.07.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.49.22.57.35.07.12.07.72-.17 1.4z"/></svg></span><span class="wa-btn-meta"><span class="wa-btn-name">Diego</span><span class="wa-btn-phone">55 1726 3669</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENIDADES DEL EDIFICIO Y CERTEZA PATRIMONIAL -->
+    <section id="sec-amenidades" class="amenities-section">
+      <div class="sec-kicker">Infraestructura, Seguridad y Amenidades del Condominio</div>
+      <h2 class="sec-title">Equipamiento Exclusivo del Edificio y Respaldo Documental</h2>
+      <p class="sec-desc">Ventajas operativas y documentales verificadas que hacen única a esta propiedad en Fuente de Molinos.</p>
+
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <span class="amenity-icon">🛗</span>
+          <h4>Doble Elevador (Directo + Servicio)</h4>
+          <p>Elevador principal que llega directo al vestíbulo del departamento, más un elevador de servicio independiente directo a la puerta de la cocina.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🚗</span>
+          <h4>4 Lugares de Estacionamiento</h4>
+          <p>La escritura original ampara 2 cajones y se adquirieron <strong>2 cajones adicionales</strong>, sumando <strong>4 espacios de estacionamiento</strong> en total.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🛡️</span>
+          <h4>Portería 24/7 y Área Infantil</h4>
+          <p>Edificio con portería y vigilancia las 24 horas, además de área común recreativa con pasto sintético, tumbling (trampolín) y juegos infantiles.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">📋</span>
+          <h4>Avalúo Certificado y Predial 2026</h4>
+          <p>Avalúo comercial vigente de <strong>$11,867,000 MXN</strong> (15 nov 2026), Escritura N.º 18,248 (Notaría 150) y Boleta Predial 2026 al corriente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRÉDITO HIPOTECARIO -->
+    <section id="sec-credito" class="credit-section">
+      <div class="credit-top">
+        <div>
+          <div class="sec-kicker">Asesoría y Gestión Hipotecaria · Sin Costo</div>
+          <h2 class="credit-title">Te Ayudamos a Tramitar tu Crédito Hipotecario</h2>
+          <p class="credit-desc">
+            Contamos con asesoría especializada para gestionar y tramitar tu crédito hipotecario de principio a fin con las principales instituciones bancarias del país, respaldado por avalúo comercial oficial vigente de $11,867,000.00 MXN.
+          </p>
+        </div>
+        <div class="credit-price-tag">
+          <div class="lbl">Valor Comercial</div>
+          <div class="val">$11,867,000.00 MXN</div>
+        </div>
+      </div>
+
+      
+      <div class="banks-featured-grid">
+        <div class="bank-card featured" title="HSBC Hipotecario Preferente">
+          <div class="bank-logo-wrap">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSFNCQ19NQVNURVJCUkFORF9MT0dPX1dXX1JHQiINCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMTUuOSA4NSINCgkgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzE1LjkgODU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjQyLjYiIHdpZHRoPSI4NSIgaGVpZ2h0PSI4NSIgZmlsbD0iI2ZmZmZmZiIvPg0KPHRpdGxlPkhTQkNfTUFTVEVSQlJBTkRfTE9HT19XV19SR0I8L3RpdGxlPg0KPHBvbHlnb24gcG9pbnRzPSIxNzAuMSw0Mi42IDEyNy42LDAgMTI3LjYsODUuMSIgZmlsbD0iI2RiMDAxMSIvPg0KPHBvbHlnb24gcG9pbnRzPSI4NS4xLDQyLjYgMTI3LjYsMCA0Mi42LDAiIGZpbGw9IiNkYjAwMTEiLz4NCjxwb2x5Z29uIHBvaW50cz0iMCw0Mi42IDQyLjYsODUuMSA0Mi42LDAiIGZpbGw9IiNkYjAwMTEiLz4NCjxwb2x5Z29uIHBvaW50cz0iODUuMSw0Mi42IDQyLjYsODUuMSAxMjcuNiw4NS4xIiBmaWxsPSIjZGIwMDExIi8+DQo8cGF0aCBkPSJNMjA3LjQsNDUuMUgxOTJ2MTUuMmgtNy43VjI0LjdoNy43djE0LjZoMTUuNFYyNC43aDcuN3YzNS42aC03LjdWNDUuMXoiLz4NCjxwYXRoIGQ9Ik0yMzMuNyw2MWMtNy43LDAtMTQtMy4xLTE0LjEtMTEuNmg3LjdjMC4xLDMuOCwyLjMsNi4xLDYuNSw2LjFjMy4xLDAsNi43LTEuNiw2LjctNS4xYzAtMi44LTIuNC0zLjYtNi40LTQuOGwtMi42LTAuNw0KCWMtNS42LTEuNi0xMS4yLTMuOC0xMS4yLTEwLjJjMC03LjksNy40LTEwLjYsMTQuMS0xMC42YzYuOSwwLDEyLjksMi40LDEzLDEwLjNoLTcuN2MtMC4zLTMuMi0yLjItNS4xLTUuOC01LjENCgljLTIuOSwwLTUuNywxLjUtNS43LDQuN2MwLDIuNiwyLjQsMy40LDcuNCw1bDMsMC45YzYuMSwxLjksMTAsNCwxMCwxMEMyNDguNSw1Ny45LDI0MC43LDYxLDIzMy43LDYxeiIvPg0KPHBhdGggZD0iTTI1Mi45LDI0LjhoMTIuNGMyLjMtMC4xLDQuNywwLDcsMC40YzQuMywxLDcuNiwzLjgsNy42LDguNmMwLDQuNi0yLjksNi45LTcuMSw4YzQuOCwwLjksOC40LDMuMyw4LjQsOC42DQoJYzAsOC4xLTgsOS45LTE0LjIsOS45aC0xNEwyNTIuOSwyNC44eiBNMjY1LjMsMzkuNmMzLjQsMCw2LjktMC43LDYuOS00LjhjMC0zLjctMy4yLTQuNy02LjQtNC43aC01LjR2OS41SDI2NS4zeiBNMjY2LDU1DQoJYzMuNiwwLDcuMS0wLjgsNy4xLTUuMnMtMy01LjItNi43LTUuMmgtNi4xVjU1SDI2NnoiLz4NCjxwYXRoIGQ9Ik0zMDEuMiw2MWMtMTEuNSwwLTE2LjYtNy4zLTE2LjYtMTguMnM1LjctMTguOCwxNy0xOC44YzcuMSwwLDE0LDMuMiwxNC4yLDExLjJoLThjLTAuNC0zLjYtMi44LTUuNC02LjItNS40DQoJYy03LDAtOS4xLDcuNS05LjEsMTMuMmMwLDUuNywyLjEsMTIuMyw4LjgsMTIuM2MzLjUsMCw2LjEtMS45LDYuNi01LjVoOEMzMTUuMSw1OCwzMDguNiw2MSwzMDEuMiw2MXoiLz4NCjwvc3ZnPg0K" alt="HSBC" />
+          </div>
+          <span class="bank-tag">Crédito Hipotecario</span>
+        </div>
+        <div class="bank-card featured" title="Santander Hipotecario Preferente">
+          <div class="bank-logo-wrap">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iU2FudGFuZGVyIgogICB4PSIwcHgiCiAgIHk9IjBweCIKICAgdmlld0JveD0iMCAwIDIzOC4yIDQxLjUiCiAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgIHNvZGlwb2RpOmRvY25hbWU9IkJhbmNvX1NhbnRhbmRlcl9Mb2dvdGlwby5zdmciCiAgIHdpZHRoPSIyMzguMiIKICAgaGVpZ2h0PSI0MS41IgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjEgKGM2OGUyMmMzODcsIDIwMjEtMDUtMjMpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj48ZGVmcwogICBpZD0iZGVmczEzIiAvPjxzb2RpcG9kaTpuYW1lZHZpZXcKICAgaWQ9Im5hbWVkdmlldzExIgogICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgIHNob3dncmlkPSJmYWxzZSIKICAgZml0LW1hcmdpbi10b3A9IjAiCiAgIGZpdC1tYXJnaW4tbGVmdD0iMCIKICAgZml0LW1hcmdpbi1yaWdodD0iMCIKICAgZml0LW1hcmdpbi1ib3R0b209IjAiCiAgIGlua3NjYXBlOnpvb209IjIuMzU3NTg4NCIKICAgaW5rc2NhcGU6Y3g9IjEwNS44Mjg0OCIKICAgaW5rc2NhcGU6Y3k9IjQ2LjQ0NTc2NyIKICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDE3IgogICBpbmtzY2FwZTp3aW5kb3cteD0iMTkxMiIKICAgaW5rc2NhcGU6d2luZG93LXk9Ii04IgogICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJTYW50YW5kZXIiIC8+CjxzdHlsZQogICB0eXBlPSJ0ZXh0L2NzcyIKICAgaWQ9InN0eWxlMiI+Cgkuc3Qwe2ZpbGw6I0VBMUQyNTt9Cjwvc3R5bGU+Cjx0aXRsZQogICBpZD0idGl0bGU0Ij5TYW50YW5kZXI8L3RpdGxlPiAgICAKPGcKICAgaWQ9Imc4IgogICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLC0wLjQpIj4KCTxwYXRoCiAgIGNsYXNzPSJzdDAiCiAgIGQ9Ik0gMzEuNSwxOS41IEMgMzEuNCwxOCAzMSwxNi41IDMwLjIsMTUuMiBMIDIzLjQsMy4zIEMgMjIuOSwyLjQgMjIuNSwxLjQgMjIuMywwLjQgTCAyMiwwLjkgYyAtMS43LDIuOSAtMS43LDYuNiAwLDkuNSBsIDUuNSw5LjUgYyAxLjcsMi45IDEuNyw2LjYgMCw5LjUgbCAtMC4zLDAuNSBjIC0wLjIsLTEgLTAuNiwtMiAtMS4xLC0yLjkgbCAtNSwtOC43IC0zLjIsLTUuNiBDIDE3LjQsMTEuOCAxNywxMC44IDE2LjgsOS44IGwgLTAuMywwLjUgYyAtMS43LDIuOSAtMS43LDYuNSAwLDkuNSB2IDAgbCA1LjUsOS41IGMgMS43LDIuOSAxLjcsNi42IDAsOS41IGwgLTAuMywwLjUgYyAtMC4yLC0xIC0wLjYsLTIgLTEuMSwtMi45IEwgMTMuNywyNC41IEMgMTIuOCwyMi45IDEyLjQsMjEuMSAxMi40LDE5LjMgNS4xLDIxLjIgMCwyNS4zIDAsMzAgMCwzNi42IDkuOCw0MS45IDIxLjksNDEuOSAzNCw0MS45IDQzLjgsMzYuNiA0My44LDMwIDQzLjksMjUuNSAzOC45LDIxLjQgMzEuNSwxOS41IFogbSAyMC43LDIwLjMgYyAwLjEsLTEuNyAwLjMsLTIuOCAwLjgsLTQuMiAyLjMsMS4xIDUuMywxLjYgNy41LDEuNiAzLjgsMCA2LC0xLjIgNiwtMy43IDAsLTIuNCAtMS42LC0zLjUgLTUuNCwtNS4yIEwgNTksMjcuNSBjIC0zLjksLTEuNyAtNi41LC0zLjkgLTYuNSwtOC4yIDAsLTQuNyAzLjMsLTcuNyA5LjksLTcuNyAyLjcsMCA1LjIsMC40IDcuNSwxLjIgLTAuMSwxLjYgLTAuNCwyLjkgLTAuOCw0LjEgLTIuMiwtMC44IC00LjksLTEuMiAtNi44LC0xLjIgLTMuNiwwIC01LjIsMS40IC01LjIsMy42IDAsMi4xIDEuNiwzLjQgNC41LDQuNiBsIDIuMiwwLjkgYyA1LjIsMi4yIDcuNCw0LjYgNy40LDguNiAwLDQuNyAtMy42LDggLTEwLjYsOCAtMy4zLDAgLTYuMSwtMC41IC04LjQsLTEuNiB6IE0gOTMuMywyMC4xIHYgMjAuNiBoIC00LjIgbCAtMC4yLC0yLjUgYyAtMS4yLDEuOCAtMi45LDMgLTUuOCwzIC01LjQsMCAtOS4xLC00IC05LjEsLTEwLjkgMCwtNy4yIDMuOSwtMTEuNCAxMS41LC0xMS40IDMsMC4xIDUuNSwwLjQgNy44LDEuMiB6IE0gODguOCwzNiBWIDIzLjEgYyAtMC45LC0wLjIgLTIsLTAuMiAtMy4zLC0wLjIgLTQuNywwIC02LjksMi45IC02LjksNy41IDAsNC4yIDEuNyw3LjIgNS43LDcuMiAxLjksLTAuMSAzLjMsLTAuNyA0LjUsLTEuNiB6IG0gMjcuNywtOS4xIFYgNDAuNyBIIDExMiB2IC0xMyBjIDAsLTMuMyAtMS4xLC00LjggLTUuNiwtNC44IC0xLjEsMCAtMi4zLDAuMSAtMy42LDAuMyBWIDQwLjcgSCA5OC4zIFYgMjAuMSBjIDIuOSwtMC43IDYuMSwtMS4yIDguMiwtMS4yIDcuNiwwLjEgMTAsMyAxMCw4IHogbSAxMi42LDEwLjUgYyAxLjMsMCAyLjYsLTAuMiAzLjUsLTAuNiAtMC4xLDEuMiAtMC4zLDIuNiAtMC41LDMuOCAtMS4yLDAuNSAtMi42LDAuNyAtMy44LDAuNyAtNC40LDAgLTcuMiwtMiAtNy4yLC03IFYgMTIuNiBjIDEuNCwtMC41IDMuMSwtMC43IDQuNSwtMC43IHYgNy44IGggNy4yIGMgLTAuMSwxLjQgLTAuMiwyLjcgLTAuNCwzLjkgaCAtNi44IHYgMTAuMSBjIDAsMi42IDEuMywzLjcgMy41LDMuNyB6IG0gMjQuMywtMTcuMyB2IDIwLjYgaCAtNC4yIEwgMTQ5LDM4LjIgYyAtMS4yLDEuOCAtMi45LDMgLTUuOCwzIC01LjQsMCAtOS4xLC00IC05LjEsLTEwLjkgMCwtNy4yIDMuOSwtMTEuNCAxMS41LC0xMS40IDMsMC4xIDUuNCwwLjQgNy44LDEuMiB6IE0gMTQ4LjgsMzYgViAyMy4xIGMgLTAuOSwtMC4yIC0yLC0wLjIgLTMuMywtMC4yIC00LjcsMCAtNi45LDIuOSAtNi45LDcuNSAwLDQuMiAxLjcsNy4yIDUuNyw3LjIgMS45LC0wLjEgMy40LC0wLjcgNC41LC0xLjYgeiBtIDI3LjgsLTkuMSBWIDQwLjcgSCAxNzIgdiAtMTMgYyAwLC0zLjMgLTEuMSwtNC44IC01LjYsLTQuOCAtMS4xLDAgLTIuMywwLjEgLTMuNiwwLjMgdiAxNy41IGggLTQuNSBWIDIwLjEgYyAyLjksLTAuNyA2LjEsLTEuMiA4LjIsLTEuMiA3LjYsMC4xIDEwLjEsMyAxMC4xLDggeiBtIDIyLjksLTE1IHYgMjguOCBoIC00LjIgbCAtMC4yLC0yLjYgYyAtMS4yLDEuOSAtMi45LDMuMSAtNS45LDMuMSAtNS40LDAgLTkuMSwtNCAtOS4xLC0xMC45IDAsLTcuMiAzLjksLTExLjQgMTEuNSwtMTEuNCAxLjIsMCAyLjMsMC4xIDMuNCwwLjMgdiAtNi44IGMgMS40LC0wLjQgMywtMC41IDQuNSwtMC41IHogTSAxOTUsMzYgViAyMy4zIGMgLTEuMiwtMC4yIC0yLjQsLTAuNCAtMy42LC0wLjQgLTQuNSwwIC02LjYsMi44IC02LjYsNy41IDAsNC4yIDEuNyw3LjIgNS43LDcuMiAxLjgsLTAuMSAzLjMsLTAuNyA0LjUsLTEuNiB6IG0gMjcuMywtNC4xIGggLTE0LjUgYyAwLjYsMy43IDIuNyw1LjQgNi44LDUuNCAyLjUsMCA1LC0wLjUgNy4yLC0xLjYgLTAuMiwxLjIgLTAuNCwyLjggLTAuNyw0LjEgLTIuMSwwLjkgLTQuMiwxLjMgLTYuNywxLjMgLTcuNiwwIC0xMS4yLC00LjIgLTExLjIsLTExLjIgMCwtNi4xIDIuOCwtMTEgMTAsLTExIDYuNSwwIDkuMyw0LjIgOS4zLDkuNCAwLDEuNCAwLDIuNCAtMC4yLDMuNiB6IE0gMjA3LjgsMjguMSBIIDIxOCBjIDAsLTMuNCAtMS44LC01LjQgLTQuOSwtNS40IC0zLjMsMC4xIC01LDEuOSAtNS4zLDUuNCB6IG0gMzAuNCwtOC45IGMgMCwxLjQgLTAuMiwzIC0wLjQsMy45IC0xLjEsLTAuMSAtMi4xLC0wLjIgLTMuNCwtMC4yIC0xLjEsMCAtMi4yLDAuMSAtMy4zLDAuMiB2IDE3LjYgaCAtNC41IFYgMjAuMSBjIDEuOSwtMC43IDUuMiwtMS4yIDcuNywtMS4yIDEuMywwLjEgMi45LDAuMSAzLjksMC4zIHoiCiAgIGlkPSJwYXRoNiIgLz4KPC9nPgo8bWV0YWRhdGEKICAgaWQ9Im1ldGFkYXRhODMwIj48cmRmOlJERj48Y2M6V29yawogICAgICAgcmRmOmFib3V0PSIiPjxkYzp0aXRsZT5TYW50YW5kZXI8L2RjOnRpdGxlPjwvY2M6V29yaz48L3JkZjpSREY+PC9tZXRhZGF0YT48L3N2Zz4K" alt="Santander" />
+          </div>
+          <span class="bank-tag">Crédito Hipotecario</span>
+        </div>
+      </div>
+
+      <div class="banks-sub-label">Otras instituciones bancarias y esquemas cofinanciados:</div>
+      <div class="banks-secondary-grid">
+        <div class="bank-card" title="Scotiabank Hipotecario">
+          <div class="bank-logo-wrap">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgd2lkdGg9IjI3Mi42MzU0NCIKICAgaGVpZ2h0PSIzOS42OTUwMzgiCiAgIHZpZXdCb3g9IjAgMCA3Mi4xMzQ3OTkgMTAuNTAyNjQ1IgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmc4Ij4KICA8ZwogICAgIGlkPSJnMTIyIj4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDEwMzY0IgogICAgICAgZD0iTSA2LjczMDMzNTQsOC4zNjgwNTg3IEMgNi44OTI5NDM4LDcuOTcyNTYxNyA2Ljk3MTQ5MjIsNy41NDY3NDc5IDYuOTYwNDY3OSw3LjExOTU1NjIgNi45NzU2MjY4LDYuNDkxMTcwOCA2Ljc1OTI3NDEsNS44Nzc5NDM1IDYuMzUyNzUyOCw1LjM5NzAwODIgNS44OTkzNzgyLDQuODk4MTU4MiA1LjEyMzU0MjYsNC40ODMzNjg3IDQuMDQ4NjcyNyw0LjE2Nzc5ODEgMy44NDA1ODkyLDQuMTE0MDU0NSAzLjYzODAxNzUsNC4wNDEwMTg1IDMuNDQyMzM1OSwzLjk1MTQ0NjEgMy4yNzI4MzcxLDMuODY4NzYzOCAzLjEyMTI1MzEsMy43NTU3NjQ1IDIuOTkzMDk1NiwzLjYxNzk2MDcgMi44NTk0MjYsMy40NjYzNzY3IDIuNzg5MTQ1OSwzLjI2OTMxNzEgMi43OTg3OTE5LDMuMDY2NzQ1NCBjIDAuMDA0MTMsLTAuMjk0OSAwLjE2OTQ5ODgsLTAuNTY0OTk1NSAwLjQzMTMyNjMsLTAuNzAxNDIxNCAwLjUzNjA1NjgsLTAuMjM1NjQ0NiAxLjE0NjUyNzgsLTAuMjM1NjQ0NiAxLjY4MTIwNjcsMCAwLjIzODQwMDUsMC4wODY4MTYgMC40NjcxNTQ3LDAuMTk0MzAzMyAwLjY4NjI2MjksMC4zMjEwODI4IEwgNi41MDAyMDI5LDAuODg4MDY2OTYgQyA2LjA5NjQzNzgsMC42Mzg2NDIxMiA1LjY2MjM1NTcsMC40NDcwOTQ3MSA1LjIwNjIyNDksMC4zMTYxODA5OCA0LjczNjMxMzksMC4xOTQ5MTM2MSA0LjI1NDAwMDQsMC4xMzI5MDE5OCAzLjc2ODkzMDksMC4xMzI5MDE5OCAzLjMwNzI4ODMsMC4xMjQ2MzM3NSAyLjg0ODQwMTcsMC4yMDA0MjU3NyAyLjQxNDMxOTUsMC4zNTYxNDQwMSAyLjAyODQ2ODgsMC41MDYzNTA0NCAxLjY3NzA2OSwwLjczNjQ4MjkyIDEuMzgzNTQ2OSwxLjAyODYyNjcgMS4wODg2NDY1LDEuMzIzNTI3MSAwLjg1NDM4MDE5LDEuNjc0OTI2OSAwLjY5NzI4MzY1LDIuMDYwNzc3NiAwLjU0MTU2NTQxLDIuNDU3NjUyNiAwLjQ2NDM5NTI3LDIuODgyMDg4NCAwLjQ2NzE1MTUyLDMuMzA3OTAyMiAwLjQ5MTk1NjAzLDMuOTg4NjUzMyAwLjc3OTk2NTk0LDQuNjMyMTk2OSAxLjI2Nzc5MTcsNS4xMDYyNDIgMS43MzM1Njg0LDUuNTE0MTQxNCAyLjI3OTI3MTYsNS44MjAwNjYxIDIuODcwNDUwMyw2LjAwMTk2NzEgMy4xNTE1Njk3LDYuMTA5NDUzOSAzLjQ2MzAwNjYsNi4yMDU5MTY4IDMuNjYxNDQ0MSw2LjI4MTcwOSBjIDAuMjAzOTQ5NiwwLjA3NzE3IDAuMzk5NjMxMywwLjE3NTAxMDYgMC41ODE1MzIsMC4yOTQ5IDAuMTMwOTEzNywwLjA5MzcwNyAwLjIzNzAyMjksMC4yMTYzNTE5IDAuMzEwMDU4OCwwLjM1OTY2NzkgMC4wNjMzOSwwLjEzNjQyNTkgMC4wODY4MTYsMC4yODY2MzE5IDAuMDY3NTI0LDAuNDM1NDYwMSBDIDQuNTk5ODg5NSw3LjU5NzczNTMgNC40OTEwMjMzLDcuODA3MTk3MSA0LjMxODc2ODMsNy45NTQ2NDczIDQuMDM2MjcwNSw4LjE1OTk3NDkgMy42ODkwMDQ4LDguMjU1MDU5OCAzLjM0MTczOTIsOC4yMjMzNjQ4IDIuOTMxMDgzNiw4LjIxMjM0MDUgMi41MjczMTg1LDguMTE1ODc3NyAyLjE1NTI0ODMsNy45Mzk0ODg4IDEuODMwMDMxMyw3Ljc4Mzc3MDUgMS41MTQ0NjA2LDcuNjA4NzU5NiAxLjIwOTkxMzksNy40MTQ0NTYzIEwgMC4xMzIyODgxMyw5LjI2NjUzOTcgYyAwLjg1MDI0OTUzLDAuNjk4NjY1NSAxLjkxMjcxNzE3LDEuMDg1ODk0MyAzLjAxMTAxMzU3LDEuMDk2OTE4MyAwLjU0NDMyNTIsMCAxLjA4NTg5NDEsLTAuMDg1NDQgMS42MDI2NTg2LC0wLjI1NDkzNyBDIDUuMTkxMDY2NCw5Ljk1OTY5MzEgNS42MDMwOTk5LDkuNzI5NTYwNiA1Ljk2MTM4OTksOS40MjkxNDggNi4yODkzNjMyLDkuMTMyODcwMSA2LjU1MTE5MDMsOC43NzE4MjM5IDYuNzMwMzM1NCw4LjM2ODA1ODcgWiBtIDAsMCIKICAgICAgIHN0eWxlPSJmaWxsOiNlYjBmMTk7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMzUyNzc4IiAvPgogICAgPHBhdGgKICAgICAgIGlkPSJwYXRoMTAzNzAiCiAgICAgICBkPSJNIDEyLjU0ODQxMyw3Ljc4OTI4MjcgQyAxMi4wMDY4NDQsOC40NjQ1MjE2IDExLjAyMTU0Niw4LjU3MzM4NjQgMTAuMzQ2MzA4LDguMDMzMTk1NCA5LjY3MTA2ODksNy40OTE2MjY0IDkuNTYwODI1OSw2LjUwNDk1MSAxMC4xMDEwMTcsNS44Mjk3MTI0IGMgMC41NDE1NjksLTAuNjc2NjE2OSAxLjUyNjg2NiwtMC43ODU0ODIgMi4yMDIxMDUsLTAuMjQ1MjkxIDAuMDg5NTcsMC4wNzE2NTggMC4xNzIyNTUsMC4xNTI5NjI0IDAuMjQ1MjkxLDAuMjQxMTU2OCBMIDEzLjk1MjYzNCw0LjQxNTg0NSBDIDEzLjI4MTUyOSwzLjY3NDQ2MDIgMTIuMzI2NTQ5LDMuMjUyNzgwNiAxMS4zMjYwOTMsMy4yNTQxNTg2IDkuMzY3OTAwNSwzLjI0NzI2ODUgNy42Nzg0MjU4LDQuNjQ1OTc3NCA3LjY3ODQyNTgsNi44MDM5ODUyIGMgMCwyLjE1NjYzMDIgMS43MDczODk1LDMuNTU5NDcyOCAzLjY2NTU4MjIsMy41NTk0NzI4IDEuMDAxODMzLDAgMS45NTY4MTQsLTAuNDIzMDU3NyAyLjYzMDY3NSwtMS4xNjQ0NDIxIHogbSAwLDAiCiAgICAgICBzdHlsZT0iZmlsbDojZWIwZjE5O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjM1Mjc3OCIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDEwMzUyIgogICAgICAgZD0ibSAxNy41OTYxNjcsMy4yNDcyNjg1IGMgLTEuOTY1MDgzLC0wLjAwMjc2IC0zLjU1OTQ3MywxLjU5MDI1NjMgLTMuNTYwODUxLDMuNTU2NzE2NyAtMC4wMDE0LDEuOTY3ODM4NyAxLjU5MTYzNSwzLjU2MjIyODggMy41NTY3MTcsMy41NjM2MDY4IDEuOTY1MDgzLDAgMy41NTgwOTUsLTEuNTk0Mzg5OCAzLjU1ODA5NSwtMy41NjA4NTA1IDAsLTEuOTY1MDgyOCAtMS41OTAyNTYsLTMuNTU4MDk1MSAtMy41NTM5NjEsLTMuNTU5NDczIHogbSAwLDUuMTI3NjgwNCBjIC0wLjg2NTQwOCwtMC4wMDU1MSAtMS41NjI2OTUsLTAuNzEyNDQ1OCAtMS41NTg1NjEsLTEuNTc5MjMxNyAwLjAwNDEsLTAuODY1NDA4MSAwLjcwODMxMiwtMS41NjU0NTE1IDEuNTczNzIsLTEuNTY0MDczNiAwLjg2NTQwOCwwLjAwMjc1IDEuNTY2ODI5LDAuNzA1NTU1NiAxLjU2NjgyOSwxLjU3MjM0MTYgMCwwLjQxNzU0NTcgLTAuMTY2NzQyLDAuODE5OTMyOSAtMC40NjQzOTksMS4xMTQ4MzI5IC0wLjI5NjI3OCwwLjI5NDkwMDQgLTAuNjk4NjY1LDAuNDU4ODg3IC0xLjExNzU4OSwwLjQ1NjEzMDggeiBtIDAsMCIKICAgICAgIHN0eWxlPSJmaWxsOiNlYjBmMTk7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMzUyNzc4IiAvPgogICAgPHBhdGgKICAgICAgIGlkPSJwYXRoMTAzNTQiCiAgICAgICBkPSJNIDI1LjY4MjQ5NiwzLjQxNTM4OTMgSCAyNC43MTIzNTcgViAxLjMxNjYzNyBoIC0yLjEyNzY5MSB2IDIuMDk4NzUyMyBoIC0wLjk3MDEzOSB2IDEuOTI3ODc1MyBoIDAuOTcwMTM5IHYgNC44NTA2OTQ0IGggMi4xMjc2OTEgViA1LjM0MzI2NDYgaCAwLjk3MDEzOSB6IG0gMCwwIgogICAgICAgc3R5bGU9ImZpbGw6I2ViMGYxOTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4zNTI3NzgiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxMDM1OCIKICAgICAgIGQ9Im0gMjcuNzE5MjM3LDAuMTMyOTAxOTggYyAtMC40Nzk1NTgsLTAuMDAxMzc4IC0wLjkxMzY0LDAuMjg2NjMxOTYgLTEuMDk4Mjk3LDAuNzMwMzYwMTEgLTAuMTg0NjU3LDAuNDQyMzUwNTEgLTAuMDg0MDYsMC45NTM2MDI4MSAwLjI1NDkzNywxLjI5Mzk3ODAxIDAuMzM4OTk3LDAuMzQwMzc1NiAwLjg1MDI1LDAuNDQyMzUwNiAxLjI5MjYsMC4yNTkwNzEyIDAuNDQzNzI4LC0wLjE4MzI3OSAwLjczMzExNiwtMC42MTU5ODMyIDAuNzMzMTE2LC0xLjA5NjkxODQgMCwtMC42NTMxOTAwMiAtMC41Mjc3ODksLTEuMTg1MTEyODggLTEuMTgyMzU2LC0xLjE4NjQ5MDkyIHogbSAwLDAiCiAgICAgICBzdHlsZT0iZmlsbDojZWIwZjE5O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjM1Mjc3OCIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDEwMzU2IgogICAgICAgZD0ibSAyNi42NTUzOTEsMy40MTUzODkzIGggMi4xMjQ5MzUgdiA2Ljc3NTgxMzcgaCAtMi4xMjQ5MzUgeiBtIDAsMCIKICAgICAgIHN0eWxlPSJmaWxsOiNlYjBmMTk7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMzUyNzc4IiAvPgogICAgPHBhdGgKICAgICAgIGlkPSJwYXRoMTAzNzIiCiAgICAgICBkPSJNIDM3LjA5MTI3MywxMC4yMDIyMjggViAzLjQxNTM4OTMgaCAtMi4wNjk4MSBWIDQuMTM0NzI1MSBMIDM0LjgyNzE1OCwzLjk2NjYwNDcgQyAzNC4zNDQ4NDUsMy41MDM1ODM4IDMzLjY5OTkyMiwzLjI0NDUxMjIgMzMuMDMxNTc0LDMuMjQ3MjY4NSBjIC0xLjgzMDAzNSwwIC0zLjM3NDgxNiwxLjYyODg0MTEgLTMuMzc0ODE2LDMuNTU2NzE2NyAwLDEuOTI2NDk3NyAxLjU0ODkxNSwzLjU1OTQ3MjggMy4zNzQ4MTYsMy41NTk0NzI4IDAuNjY4MzQ4LDAuMDAxNCAxLjMxMzI3MSwtMC4yNTYzMTUgMS43OTU1ODQsLTAuNzE5MzM1NiBMIDM1LjAyMTQ2Myw5LjQ3NDYyMzYgViAxMC4xOTM5NTkgWiBNIDMzLjM3NjA4NCw4LjQwMzg4NzYgYyAtMC44ODQ3MDEsLTAuMDA1NTEgLTEuNTk3MTQ3LC0wLjcyNzYwNDIgLTEuNTkxNjM1LC0xLjYxMjMwNDYgMC4wMDQxLC0wLjg4NDcwMDQgMC43MjM0NywtMS41OTg1MjQ1IDEuNjA4MTcxLC0xLjU5NTc2ODYgMC44ODQ3LDAuMDA0MTMgMS41OTg1MjUsMC43MjM0NzA0IDEuNTk3MTQ1LDEuNjA4MTcwOCAtMC4wMDE0LDAuNDI1ODE0MSAtMC4xNzIyNTQsMC44MzUwOTE0IC0wLjQ3NTQyMiwxLjEzNTUwMzYgLTAuMzAxNzksMC4zMDA0MTI1IC0wLjcxMjQ0NiwwLjQ2NzE1NSAtMS4xMzgyNTksMC40NjQzOTg4IHogbSAwLDAiCiAgICAgICBzdHlsZT0iZmlsbDojZWIwZjE5O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjM1Mjc3OCIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDEwMzc2IgogICAgICAgZD0iTSA0MC4yNjQ4OTgsMTAuMjAyMjI4IFYgOS40ODI4OTE2IGwgMC4xOTAxNjgsMC4xNjgxMjA5IGMgMC40ODM2OSwwLjQ2MzAyMDUgMS4xMjcyMzUsMC43MjA3MTQ1IDEuNzk2OTYyLDAuNzE5MzM1NSAxLjgyODY1NiwwIDMuMzczNDM4LC0xLjYyODg0MDggMy4zNzM0MzgsLTMuNTU5NDcyMyAwLC0xLjkzMDYzMTkgLTEuNTQ0NzgyLC0zLjU1NjcxNzEgLTMuMzczNDM4LC0zLjU1NjcxNzEgLTAuNjY5NzI3LC0wLjAwMTM4IC0xLjMxMzI3MiwwLjI1NjMxNTMgLTEuNzk2OTYyLDAuNzE5MzM2MiBMIDQwLjI2NDg5OCw0LjE0Mjk5MzYgViAwLjMwMjQwMDc4IEggMzguMTkwOTQ5IFYgMTAuMjAyMjI4IFogbSAwLjA0MjcyLC0zLjM5MTM1MjMgYyAtMC4wMDQxLC0wLjY1MDQzNDEgMC4zODMwOTUsLTEuMjM3NDc4NiAwLjk4MjU0MiwtMS40ODk2NTk3IDAuNTk4MDY4LC0wLjI1MjE4MDcgMS4yODg0NjUsLTAuMTE3MTMzMSAxLjc1MDExLDAuMzQwMzc1NiAwLjQ2MDI2MiwwLjQ1NzUwODcgMC41OTk0NDMsMS4xNDkyODQxIDAuMzUxMzk4LDEuNzUwMTA4NCAtMC4yNDY2NjksMC41OTk0NDY3IC0wLjgzMjMzNywwLjk5MjE4NzYgLTEuNDgxMzkxLDAuOTkyMTg3NiAtMC44ODMzMjQsMCAtMS41OTk5MDQsLTAuNzE2NTc5OSAtMS42MDI2NTksLTEuNTk5OTAyNCB6IG0gMCwwIgogICAgICAgc3R5bGU9ImZpbGw6I2ViMGYxOTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4zNTI3NzgiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxMDM3NCIKICAgICAgIGQ9Ik0gNTMuNzgzNDUyLDEwLjIwMjIyOCBWIDMuNDE1Mzg5MyBIIDUxLjcxMzYzOCBWIDQuMTM0NzI1MSBMIDUxLjUxOTMzNSwzLjk2NjYwNDcgYyAtMC40ODM2OSwtMC40NjMwMjA5IC0xLjEyNzIzNCwtMC43MjA3MTQyIC0xLjc5Njk2MiwtMC43MTkzMzYyIC0xLjgyODY1NSwwIC0zLjM3MzQzOCwxLjYyODg0MTEgLTMuMzczNDM4LDMuNTU2NzE2NyAwLDEuOTI2NDk3NyAxLjU0ODkxNywzLjU1OTQ3MjggMy4zNzM0MzgsMy41NTk0NzI4IDAuNjY5NzI4LDAuMDAxNCAxLjMxMzI3MiwtMC4yNTYzMTUgMS43OTY5NjIsLTAuNzE5MzM1NiBMIDUxLjcxMzYzOCw5LjQ3NDYyMzYgViAxMC4xOTM5NTkgWiBNIDUwLjA4MjA0MSw4LjQwMzg4NzYgYyAtMC44ODYwNzksMC4wMDEzOCAtMS42MDU0MTQsLTAuNzE1MjAxNiAtMS42MDY3OTQsLTEuNjAxMjgwMyAtMC4wMDE0LC0wLjg4NjA3ODcgMC43MTY1OCwtMS42MDU0MTQ1IDEuNjAyNjU5LC0xLjYwNjc5MjkgMC44ODQ3MDMsMCAxLjYwMjY1OSwwLjcxNzk1ODMgMS42MDI2NTksMS42MDQwMzcgMCwwLjg4NDcwMDQgLTAuNzE1MiwxLjYwMTI4MDMgLTEuNTk4NTI0LDEuNjA0MDM2MiB6IG0gMCwwIgogICAgICAgc3R5bGU9ImZpbGw6I2ViMGYxOTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4zNTI3NzgiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxMDM2MCIKICAgICAgIGQ9Im0gNTguMTkzMTc1LDUuMjQyNjY3OSBjIDAuNjk3Mjg2LDAuMDAyNzUgMS4yNjIyODEsMC41Njc3NTE4IDEuMjYzNjYxLDEuMjY2NDE3MyB2IDMuNjkzMTQyOCBoIDIuMTI0OTM2IFYgNi4yNDU4Nzk4IGMgMCwtMS43OTgzMzk5IC0xLjAzOTA0LC0yLjk2OTY3MjYgLTIuNjgxNjYyLC0yLjk2OTY3MjYgLTAuNjc1MjQxLDAgLTEuMzg2MzA3LDAuMjk0OTAwNCAtMS45NzE5NzUsMS4yNDQzNjg3IFYgMy40NDE1NzE4IGggLTIuMTI3NjkxIHYgNi43NjA2NTYyIGggMi4xMDk3NzcgViA2LjUwOTA4NTIgYyAwLC0wLjMzODk5NzYgMC4xMzY0MjYsLTAuNjYyODM2NyAwLjM3NzU4MSwtMC45MDEyMzcyIDAuMjQxMTU5LC0wLjIzNzAyMjYgMC41NjYzNzUsLTAuMzY5MzE0MyAwLjkwNTM3MywtMC4zNjUxODAxIHogbSAwLDAiCiAgICAgICBzdHlsZT0iZmlsbDojZWIwZjE5O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjM1Mjc3OCIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDEwMzYyIgogICAgICAgZD0iTSA2OS4zMjQ5NjksMTAuMTkzOTU5IDY2LjcxNjM0Myw2LjgwNjc0MTUgNjkuMTQxNjksMy40MTUzODkzIEggNjYuNjU4NDYzIEwgNjQuNzA3MTYxLDYuMTYwNDQxNiBWIDAuMzAyNDAwNzggSCA2Mi41ODM2MDQgViAxMC4xOTM5NTkgaCAyLjEyMzU1NyBWIDcuNDAwNjc1NyBsIDIuMTQxNDc0LDIuNzkzMjgzMyB6IG0gMCwwIgogICAgICAgc3R5bGU9ImZpbGw6I2ViMGYxOTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4zNTI3NzgiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxMDM2NiIKICAgICAgIGQ9Im0gNzAuODI0Mjc1LDcuODI1MTExOCBjIC0wLjQ4MDkzNSwtMC4wMDI3NSAtMC45MTUwMTgsMC4yODM4NzU4IC0xLjEwMTA1NSwwLjcyNjIyNiAtMC4xODYwMzQsMC40NDIzNTA1IC0wLjA4NjgyLDAuOTUzNjAyNCAwLjI1MDgwNCwxLjI5NTM1NTkgMC4zMzc2MTksMC4zNDE3NTMzIDAuODQ3NDkyLDAuNDQ1MTA2MyAxLjI5MjU5OSwwLjI2MzIwNTMgMC40NDM3MzEsLTAuMTgzMjc4OSAwLjczNDQ5NCwtMC42MTQ2MDUxIDAuNzM1ODczLC0xLjA5NTU0MDQgMC4wMDE0LC0wLjY1MzE5IC0wLjUyNTAzMiwtMS4xODUxMTI5IC0xLjE3ODIyMSwtMS4xODkyNDY4IHogbSAwLDIuMTMxODI1IEMgNzAuNDM5OCw5Ljk1ODMxMjYgNzAuMDkyNTM2LDkuNzI4MTgyNiA2OS45NDUwODUsOS4zNzQwMjY1IDY5Ljc5NjI1Niw5LjAxODQ5MjggNjkuODc3NTYsOC42MTA1OTM1IDcwLjE0NzY1Nyw4LjMzNzc0MTcgNzAuNDE5MTMxLDguMDY0ODkwMyA3MC44MjcwMyw3Ljk4MzU4NiA3MS4xODI1NjMsOC4xMzEwMzYyIGMgMC4zNTQxNTcsMC4xNDYwNzIyIDAuNTg1NjY3LDAuNDkxOTU5NSAwLjU4NTY2NywwLjg3NjQzMjMgMC4wMDE0LDAuMjUyMTgxMSAtMC4wOTc4NCwwLjQ5MzMzNzkgLTAuMjc1NjA3LDAuNjcxMTA0NyAtMC4xNzYzODksMC4xNzc3NjY5IC0wLjQxNzU0OCwwLjI3ODM2MzYgLTAuNjY4MzQ4LDAuMjc4MzYzNiB6IG0gMCwwIgogICAgICAgc3R5bGU9ImZpbGw6I2ViMGYxOTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4zNTI3NzgiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxMDM2OCIKICAgICAgIGQ9Ik0gNzAuODIwMTQsOS4yMDU5MDYgSCA3MC42Mjk5NzIgViA5LjY1NTE0NjcgSCA3MC4zOTk4MzcgViA4LjM2MTE2ODYgaCAwLjQ5MTk1OSBjIDAuMjM4NDAxLDAgMC40MzEzMjgsMC4xOTI5MjU0IDAuNDMxMzI4LDAuNDMxMzI1OSAtMC4wMDQxLDAuMTYyNjA4NCAtMC4xMDA1OTgsMC4zMDg2ODA2IC0wLjI0ODA0OSwwLjM3NzU4MjcgbCAwLjI3Mjg1MiwwLjQ4NTA2OTUgSCA3MS4wNjgxODUgWiBNIDcwLjYyOTk3Miw4Ljk4OTU1NDEgaCAwLjI3Mjg0OSBjIDAuMTA4ODY3LDAgMC4xOTcwNjEsLTAuMDg4MTk0IDAuMTk3MDYxLC0wLjE5NzA1OTYgMCwtMC4xMTAyNDMgLTAuMDg4MTksLTAuMTk4NDM3NSAtMC4xOTcwNjEsLTAuMTk4NDM3NSBoIC0wLjI3Mjg0OSB6IG0gMCwwIgogICAgICAgc3R5bGU9ImZpbGw6I2ViMGYxOTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4zNTI3NzgiIC8+CiAgPC9nPgogPC9zdmc+Cg==" alt="Scotiabank" />
+          </div>
+          <span class="bank-tag">Crédito Hipotecario</span>
+        </div>
+        <div class="bank-card" title="Banorte Hipotecario">
+          <div class="bank-logo-wrap">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ibGF5ZXIiCiAgIHg9IjBweCIKICAgeT0iMHB4IgogICB2aWV3Qm94PSIwIDAgMTkyMCAyMzUuMiIKICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgc29kaXBvZGk6ZG9jbmFtZT0iYmFub3J0ZS1sb2dvLXZlY3Rvci5zdmciCiAgIHdpZHRoPSIxOTIwIgogICBoZWlnaHQ9IjIzNS4yIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjEgKGM2OGUyMmMzODcsIDIwMjEtMDUtMjMpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzCiAgIGlkPSJkZWZzMjkiIC8+PHNvZGlwb2RpOm5hbWVkdmlldwogICBpZD0ibmFtZWR2aWV3MjciCiAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgIGJvcmRlcm9wYWNpdHk9IjEuMCIKICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgc2hvd2dyaWQ9ImZhbHNlIgogICBmaXQtbWFyZ2luLXRvcD0iMCIKICAgZml0LW1hcmdpbi1sZWZ0PSIwIgogICBmaXQtbWFyZ2luLXJpZ2h0PSIwIgogICBmaXQtbWFyZ2luLWJvdHRvbT0iMCIKICAgaW5rc2NhcGU6em9vbT0iMC4zMTkwMTg0MSIKICAgaW5rc2NhcGU6Y3g9Ijc2OS41NDgwOCIKICAgaW5rc2NhcGU6Y3k9IjI2LjY0NDIzMSIKICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDE3IgogICBpbmtzY2FwZTp3aW5kb3cteD0iMTkxMiIKICAgaW5rc2NhcGU6d2luZG93LXk9Ii04IgogICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJsYXllciIgLz4KPHN0eWxlCiAgIHR5cGU9InRleHQvY3NzIgogICBpZD0ic3R5bGUyIj4KCS5zdDB7ZmlsbDojRUMxQzJEO30KPC9zdHlsZT4KPGcKICAgaWQ9ImcyNCIKICAgdHJhbnNmb3JtPSJtYXRyaXgoMy4yLDAsMCwzLjIsLTY1LjYsLTkxMS4wNCkiPgoJPHBhdGgKICAgY2xhc3M9InN0MCIKICAgZD0ibSAyMDYuMiwzMjUuNSBoIDAuNyBjIDMuOSwwIDcsLTMuMSA3LC03IHYgLTYuMSBjIDAsLTMuNiAtMC40LC01LjMgLTEuOCwtNy4yIC0yLC0yLjUgLTUuNSwtMy42IC04LjksLTMuNiBIIDE3MyAxNjAuOCB2IDkgMTAuNCA0LjUgNC41IDExIDkuOSBoIDEyLjIgMjYuNSBjIDQuNCwwIDkuNiwtMC42IDEyLjMsLTMuNSAyLjUsLTIuNyAyLjYsLTQuOCAyLjYsLTExLjQgdiAtMi4yIGMgMC4xLC00LjUgLTMuNiwtOC4zIC04LjIsLTguMyBtIC0zMy4xLC0xNC45IGggMjUuNiBjIDEuMywwIDQsMC41IDQsMi42IHYgNS40IGMgMCwxLjcgLTIuNSwyLjQgLTMuNSwyLjQgaCAtMjYuMSB6IG0gMjkuOCwyNy44IGMgMCwxLjUgLTEuMiwyLjcgLTIuNywyLjcgaCAtMjcuMSB2IC0xMSBIIDIwMCBjIDEuNiwwIDIuOSwxLjMgMi45LDIuOSB6IgogICBpZD0icGF0aDQiIC8+Cgk8cGF0aAogICBjbGFzcz0ic3QwIgogICBkPSJtIDI3NC4zLDM1MSBoIDE0IEwgMjYwLDMwMS43IEggMjQ4LjUgTCAyMjAuNywzNTEgaCAxMi41IGwgNS44LC0xMC43IGggMjkuNiB6IG0gLTMwLjEsLTIwLjMgOS43LC0xNy44IDkuNSwxNy44IHoiCiAgIGlkPSJwYXRoNiIgLz4KCTxwb2x5Z29uCiAgIGNsYXNzPSJzdDAiCiAgIHBvaW50cz0iMzA0LjEsMzAxLjcgMzAyLjMsMzAxLjcgMjk5LjUsMzAxLjcgMjk1LjcsMzAxLjcgMjk1LjcsMzUxIDMwNi45LDM1MSAzMDYuOSwzMjYuMiAzMDYuNiwzMTguNiAzNDQuOSwzNTEgMzQ2LjksMzUxIDM1MS44LDM1MSAzNTMuNSwzNTEgMzUzLjUsMzAxLjcgMzQyLjMsMzAxLjcgMzQyLjMsMzI2LjUgMzQyLjYsMzM0LjEgIgogICBpZD0icG9seWdvbjgiIC8+Cgk8cGF0aAogICBjbGFzcz0ic3QwIgogICBkPSJtIDQxNi42LDM1MSBoIC0zOC4xIGMgLTMuNCwwIC03LjEsLTAuOCAtOS4xLC0zLjIgLTEuNywtMS45IC0yLC01LjIgLTIsLTcuOSB2IC0yNy4xIGMgMCwtMy4xIDAuNCwtNi40IDIuNCwtOC40IDIsLTIgNS42LC0yLjcgOC43LC0yLjcgaCAzOC4xIGMgMy40LDAgNy4xLDAuNyA5LjEsMy4xIDEuNiwxLjkgMiw1LjMgMiw4IHYgMjcuMSBjIDAsMi44IC0wLjMsNiAtMiw3LjkgLTIsMi40IC01LjcsMy4yIC05LjEsMy4yIG0gLTM3LC0zOS40IHYgMjkuNSBoIDM1LjkgdiAtMjkuNSB6IgogICBpZD0icGF0aDEwIiAvPgoJPHBhdGgKICAgY2xhc3M9InN0MCIKICAgZD0ibSA0ODMuOSwzNTEgaCAxNy4zIGwgLTIyLjEsLTE4LjIgaCA2LjggYyA1LjIsMCA5LjUsLTQuMiA5LjUsLTkuNSB2IC0xMi4yIGMgMCwtNS4yIC00LjIsLTkuNSAtOS41LC05LjUgSCA0NTQuMiA0NDIgdiA5LjQgMTIuMiA5LjQgMTguNCBoIDEyLjIgdiAtMTguMiBoIDkuNyB6IE0gNDU0LjIsMzExLjEgSCA0ODEgYyAxLjMsMCAyLjMsMSAyLjMsMi4zIHYgNy43IGMgMCwxLjMgLTEsMi4zIC0yLjMsMi4zIGggLTI2LjggeiIKICAgaWQ9InBhdGgxMiIgLz4KCTxwb2x5Z29uCiAgIGNsYXNzPSJzdDAiCiAgIHBvaW50cz0iNTA0LjQsMzAxLjcgNTA0LjQsMzExLjUgNTI2LjUsMzExLjUgNTI2LjUsMzUxIDUzOC43LDM1MSA1MzguNywzMTEuNSA1NjAuNywzMTEuNSA1NjAuNywzMDEuNyA1MzguNywzMDEuNyA1MjYuNSwzMDEuNyAiCiAgIGlkPSJwb2x5Z29uMTQiIC8+Cgk8cG9seWdvbgogICBjbGFzcz0ic3QwIgogICBwb2ludHM9IjYwNS45LDMyMC41IDU4Mi44LDMyMC41IDU4Mi44LDMxMS4yIDYyMCwzMTEuMiA2MjAsMzAxLjcgNTgyLjgsMzAxLjcgNTcwLjYsMzAxLjcgNTcwLjYsMzExLjIgNTcwLjYsMzIwLjUgNTcwLjYsMzMwIDU3MC42LDM0MSA1NzAuNiwzNTEgNTgyLjgsMzUxIDYyMC41LDM1MSA2MjAuNSwzNDEgNTgyLjgsMzQxIDU4Mi44LDMzMCA2MDUuOSwzMzAgIgogICBpZD0icG9seWdvbjE2IiAvPgoJPHBhdGgKICAgY2xhc3M9InN0MCIKICAgZD0ibSA4NC41LDI4NC43IGMgLTI4LjUsMCAtNTEuNiw3LjUgLTUxLjYsMTYuOCAwLDcuOCAxNi4xLDE0LjMgMzgsMTYuMiBsIDksLTI3LjcgMS42LDI4LjIgYyAxLDAgMiwwIDMuMSwwIDI4LjUsMCA1MS42LC03LjUgNTEuNiwtMTYuOCAtMC4xLC05LjEgLTIzLjIsLTE2LjcgLTUxLjcsLTE2LjciCiAgIGlkPSJwYXRoMTgiIC8+Cgk8cGF0aAogICBjbGFzcz0ic3QwIgogICBkPSJtIDcwLjYsMzE4LjcgYyAtMjcuOCwwLjMgLTUwLjEsOS4xIC01MC4xLDIwIDAsOS4yIDE1LjgsMTYuOSAzNy40LDE5LjMgeiIKICAgaWQ9InBhdGgyMCIgLz4KCTxwYXRoCiAgIGNsYXNzPSJzdDAiCiAgIGQ9Im0gODEuNCwzMTkgMi4yLDM5LjIgYyAyMi45LC0yIDM5LjksLTEwIDM5LjksLTE5LjUgMC4xLC05LjggLTE4LjEsLTE4IC00Mi4xLC0xOS43IgogICBpZD0icGF0aDIyIiAvPgo8L2c+Cjwvc3ZnPgo=" alt="Banorte" />
+          </div>
+          <span class="bank-tag">Crédito Hipotecario</span>
+        </div>
+        <div class="bank-card" title="Banamex Hipotecario">
+          <div class="bank-logo-wrap">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MjUuNSAxMDAiPgogIDwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyOS4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiAyLjEuMCBCdWlsZCAxNTEpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCB7CiAgICAgICAgZmlsbDogIzAwMzc0NjsKICAgICAgfQoKICAgICAgLnN0MSB7CiAgICAgICAgZmlsbDogI2ZmMWI0NDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTkwLjMsNDAuOGMtMS41LS41LTIuOS0uOS00LjItMS4yLDEuMy0xLjQsMi42LTMuMSwzLjktNC44LDMuNS00LjgsNS4zLTguNCw1LjMtMTEuNywwLTUuNS0zLjktOS4zLTExLjItMTUtNS42LTQuNC0xMC02LjgtMTQuMS02LjhzLTguOCwzLTEzLjYsOS41Yy0uOSwxLjMtMS44LDIuNC0yLjUsMy42LTEtMS42LTIuMi0zLjQtMy41LTUuMUM0NS43LDIuNyw0MS44LDAsMzcuNCwwcy04LjYsMi40LTE0LjcsNi40Yy03LjcsNS0xMS40LDktMTEuNCwxNC42czEuOSw3LjMsNS41LDEyLjFjLjksMS4zLDEuOCwyLjQsMi43LDMuNC0xLjkuNC0zLjksMS02LDEuN0MzLjQsNDEuNCwwLDQ1LjMsMCw1MS44cy45LDYuOSwyLjIsMTEuNWMzLDEwLjcsNi44LDE1LjcsMTQuNSwxNS43czUuOC0uNiw5LjYtMS44YzEuNS0uNSwyLjktMSw0LjEtMS40LS4yLDEuOS0uMyw0LS4zLDYuMiwwLDE1LjQsNiwxOC4yLDIzLjYsMTguMnMxOC0zLjEsMTgtMTguMiwwLTMtLjEtNC4zYzEuOC43LDMuOCwxLjUsNS45LDIuMSw0LjEsMS4zLDcuNCwxLjgsMTAuMSwxLjgsNi4zLDAsMTAtNS40LDEzLjktMTUuNiwxLjgtNC43LDIuNy04LjYsMi43LTExLjgsMC02LjUtNC4yLTEwLjEtMTMuOS0xMy4yWk02NywxOS4ybDEuNy0yLjNjMS0xLjMsMi43LTEuNiw0LS41LDYuOCw1LjgsMTAuOSwxNC40LDEwLjksMjIuNi00LS43LTYuOS0uNS05LjMsMSwwLS40LjEtLjkuMS0xLjMuMi00LjgtMi4yLTEwLTcuMS0xNS41LTEuMS0xLjItMS40LTIuNi0uNC0zLjlaTTYwLjcsMzYuM2M1LjgsNC4xLDkuMSw1LjgsMTEsNi0xLjgsMi4zLTMuMyw1LjctNC45LDEwLjUtMi4yLDYuNy0yLjgsMTAuMy0yLjQsMTIuMi0yLjgtMS02LjYtMS4zLTExLjYtMS4zcy0xMC44LjUtMTIuNSwxLjVjMC0yLjktLjctNi41LTIuMy0xMS4zLTIuMi02LjctMy45LTEwLTUuMy0xMS4yLDIuOC0uOCw2LjEtMi43LDEwLjItNS42LDUuOC00LjEsOC40LTYuNyw5LjItOC40LDEuNywyLjQsNC41LDQuOSw4LjYsNy44Wk0yNy4zLDE5LjZjNy43LTQuNSwxNy4zLTUuOCwyNS4zLTMuMi0yLDMuNS0yLjYsNi4zLTEuOSw5LS40LS4yLS44LS40LTEuMi0uNi00LjYtMS43LTEwLjQtMS0xNy4yLDEuOC0xLjUuNi0yLjkuNS0zLjktLjlsLTEuNy0yLjNjLTEtMS4zLS43LTMsLjgtMy45Wk0yOC4zLDQ0Yy0zLjEsMy44LTQuMiw5LjQtMy41LDE2LjcuMSwxLjYtLjQsMi44LTIsMy40bC0yLjguOWMtMS42LjUtMy4yLS4zLTMuNS0xLjktMi04LjYtLjItMTgsNC43LTI0LjYsMi44LDIuOSw1LjMsNC40LDguMSw0LjYtLjMuMy0uNi42LS45LDFaTTU4LDg0YzAsMS42LTEuMiwyLjktMi45LDIuNy04LjktLjgtMTcuNS01LjQtMjIuMy0xMiwzLjctMS43LDUuOS0zLjYsNi45LTYuMS4yLjQuNC44LjcsMS4yLDIuNyw0LjEsNy44LDYuOCwxNSw4LjUsMS42LjQsMi42LDEuMywyLjYsMi45djIuOWgwWk04OS45LDU3LjhjLTMuNSw4LjEtMTAuNiwxNC43LTE4LjUsMTcuMi0uNS00LTEuNy02LjYtMy44LTguNC40LDAsLjktLjIsMS4zLS4zLDQuOC0xLjMsOS01LjIsMTIuOC0xMS40LjgtMS40LDIuMS0yLjEsMy42LTEuNWwyLjguOWMxLjYuNSwyLjQsMiwxLjcsMy42WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMTAuMiwyNy4yYy0xMC40LDAtMTguOCw2LjEtMjEuMSwxNC42LS40LDEuNC40LDIuMiwxLjgsMi4yaDYuOWMxLjIsMCwxLjktLjYsMi4yLTEuOSwxLTUuMSwzLjYtNi43LDEwLjMtNi43czkuNSwxLjMsOS41LDkuNXYuNWMwLDIuMi0uOCwyLjktMywyLjloLTljLTEyLjUsMC0yMC43LDUuNC0yMC43LDE1czcuNiwxNSwxNi45LDE1LDEyLjUtMi45LDE2LTguM2guNGwyLDYuMWMuMywxLjEsMS4xLDEuNywyLjIsMS43aDQuOGMxLjMsMCwyLS43LDItMnYtMjguNWMwLTEyLjEtOC4zLTIwLjEtMjAuOS0yMC4xWk0yMTkuNiw1Ny44YzAsOC43LTQsMTIuNi0xMywxMi42cy04LjUtMS44LTguNS03LjQsMS4zLTcuNCw5LjEtNy40aDEyLjR2Mi4yWk0xNjgsNDIuN3YtLjRjNi45LTMuNywxMC4yLTguNywxMC4yLTE1LjQsMC0xMC45LTguMi0xNy43LTIyLjItMTcuN2gtMjQuNWMtMS4zLDAtMiwuNy0yLDJ2NjQuN2MwLDEuMy43LDIsMiwyaDI1LjZjMTUuNCwwLDIzLjMtNi43LDIzLjMtMTguNCwwLTcuNi00LjUtMTMuNS0xMi40LTE2LjdaTTE0MS4yLDE4LjFoMTMuOWM4LjksMCwxMSwyLjEsMTEsMTAuM3MtMi4xLDEwLjMtMTEsMTAuM2gtMTMuOXYtMjAuNlpNMTU2LjcsNjguOWgtMTUuNnYtMjEuM2gxNS42YzkuMywwLDExLjUsMi4xLDExLjUsMTAuNnMtMi4yLDEwLjctMTEuNSwxMC43Wk01MjUuMSw3NS41bC0xNi4zLTIzLjd2LS40bDE0LjktMjEuMmMuOS0xLjQuMy0yLjQtMS4zLTIuNGgtNy41Yy0xLjEsMC0xLjkuNC0yLjQsMS4zbC05LjksMTZoLS40bC05LjgtMTUuOWMtLjUtLjktMS4zLTEuNC0yLjQtMS40aC04LjRjLTEuNiwwLTIuMiwxLjEtMS4zLDIuNGwxNC45LDIxLjl2LjRsLTE2LjEsMjNjLS45LDEuNC0uNCwyLjQsMS4yLDIuNGg3LjZjMS4xLDAsMS44LS4zLDIuNC0xLjNsMTEuMi0xNy43aC4zbDExLjMsMTcuN2MuNiwxLDEuMywxLjMsMi40LDEuM2g4LjNjMS42LDAsMi4yLTEuMSwxLjMtMi40Wk0yNjcuNiwyNy4yYy02LjQsMC0xMS41LDIuNC0xNS4yLDcuMWgtLjRsLTEuOS00LjljLS40LTEtMS4yLTEuNi0yLjMtMS42aC00LjhjLTEuMywwLTIsLjctMiwydjQ2LjFjMCwxLjMuNywyLDIsMmg3LjZjMS4zLDAsMi0uNywyLTJ2LTMxLjFjMC03LjcsMS44LTkuMywxMC43LTkuM3MxMCwxLjgsMTAsOS4zdjMxLjFjMCwxLjMuNywyLDIsMmg3LjVjMS4zLDAsMi0uNywyLTJ2LTI2YzAtMTQuNS02LjItMjIuNi0xNy4yLTIyLjZaTTQ1Mi44LDI3LjJjLTE0LjksMC0yNC41LDEwLjItMjQuNSwyNS42czkuNywyNS42LDI0LjUsMjUuNiwxOS42LTUuNiwyMi44LTE0LjFjLjUtMS4yLS4zLTItMS43LTJoLTcuMWMtMS4yLDAtMS45LjYtMi4zLDEuNy0xLjYsNC44LTQuNSw2LjItMTIsNi4ycy0xMi4xLTIuOC0xMi41LTE0LjNoMzQuNmMxLjMsMCwyLS43LDItMnYtMS4xYzAtMTUuOS05LjItMjUuNi0yMy45LTI1LjZaTTQ0MC4yLDQ5LjNjLjQtMTEuMSwzLjEtMTMuOCwxMi40LTEzLjhzMTIuMSwyLjksMTIuNSwxMy44aC0yNC44Wk00MDMuMywyNy4yYy02LjUsMC0xMS42LDIuMS0xNi4xLDcuMWgtLjNjLTMuNi00LjktNy45LTcuMS0xMy44LTcuMXMtMTEuMiwyLjQtMTQuOCw3LjFoLS40bC0xLjktNC45Yy0uNC0xLTEuMi0xLjYtMi4zLTEuNmgtNC44Yy0xLjMsMC0yLC43LTIsMnY0Ni4xYzAsMS4zLjcsMiwyLDJoNy42YzEuMywwLDItLjcsMi0ydi0zMS4xYzAtNy43LDEuOC05LjMsMTAuMy05LjNzOS42LDEuOCw5LjYsOS4zdjMxLjFjMCwxLjMuNywyLDIsMmg3LjVjMS4zLDAsMi0uNywyLTJ2LTMxLjFjMC03LjcsMS44LTkuMywxMC4zLTkuM3M5LjYsMS44LDkuNiw5LjN2MzEuMWMwLDEuMy43LDIsMiwyaDcuNWMxLjMsMCwyLS43LDItMnYtMjZjMC0xNC43LTUuOC0yMi42LTE4LTIyLjZaTTMxNi4xLDI3LjJjLTEwLjQsMC0xOC44LDYuMS0yMS4xLDE0LjYtLjQsMS40LjQsMi4yLDEuOCwyLjJoNi45YzEuMiwwLDEuOS0uNiwyLjItMS45LDEtNS4xLDMuNi02LjcsMTAuMy02LjdzOS41LDEuMyw5LjUsOS41di41YzAsMi4yLS44LDIuOS0zLDIuOWgtOWMtMTIuNSwwLTIwLjcsNS40LTIwLjcsMTVzNy42LDE1LDE2LjksMTUsMTIuNS0yLjksMTYtOC4zaC40bDIsNi4xYy4zLDEuMSwxLjEsMS43LDIuMiwxLjdoNC44YzEuMywwLDItLjcsMi0ydi0yOC41YzAtMTIuMS04LjMtMjAuMS0yMC45LTIwLjFaTTMyNS42LDU3LjhjMCw4LjctNCwxMi42LTEzLDEyLjZzLTguNS0xLjgtOC41LTcuNCwxLjMtNy40LDkuMS03LjRoMTIuNHYyLjJaIi8+Cjwvc3ZnPg==" alt="Banamex" />
+          </div>
+          <span class="bank-tag">Crédito Hipotecario</span>
+        </div>
+        <div class="bank-card" title="Cofinavit (Infonavit + Banco)">
+          <div class="bank-logo-wrap">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNDAgNTQiIHdpZHRoPSIzNDAiIGhlaWdodD0iNTQiPgogIDwhLS0gRW1ibGVtOiBSZWQgSW5mb25hdml0LXN0eWxlIGdlb21ldHJpYyBob3VzZS9maWd1cmUgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMiwgMSkiPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjUyIiByeD0iMTEiIGZpbGw9IiNEMzEyMkEiLz4KICAgIDwhLS0gUm9vZiAvIENoZXZyb24gLS0+CiAgICA8cGF0aCBkPSJNOCAyNCBMMjYgOC41IEw0NCAyNCBMMzkgMjkgTDI2IDE3LjUgTDEzIDI5IFoiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDwhLS0gQ2VudHJhbCBwZXJzb24gLyBwaWxsYXIgLS0+CiAgICA8Y2lyY2xlIGN4PSIyNiIgY3k9IjI2IiByPSI0LjIiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxwYXRoIGQ9Ik0xNSA0MyBMMTkuNSAzMiBMMzIuNSAzMiBMMzcgNDMgSDMwLjggTDI4LjggMzcgSDIzLjIgTDIxLjIgNDMgWiIgZmlsbD0iI0ZGRkZGRiIvPgogIDwvZz4KICA8IS0tIFdvcmRtYXJrIGZpbGxpbmcgZnVsbCB3aWR0aCAtLT4KICA8dGV4dCB4PSI2NCIgeT0iMzQiIGZvbnQtZmFtaWx5PSInUGx1cyBKYWthcnRhIFNhbnMnLCAnSGVsdmV0aWNhIE5ldWUnLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzOCIgZm9udC13ZWlnaHQ9IjgwMCIgbGV0dGVyLXNwYWNpbmc9IjEuMiIgZmlsbD0iI0QzMTIyQSI+Q09GSU5BVklUPC90ZXh0PgogIDx0ZXh0IHg9IjY2IiB5PSI0OSIgZm9udC1mYW1pbHk9IidQbHVzIEpha2FydGEgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZvbnQtd2VpZ2h0PSI3MDAiIGxldHRlci1zcGFjaW5nPSIzLjYiIGZpbGw9IiM0NDQwM0MiPklORk9OQVZJVCArIEJBTkNPPC90ZXh0Pgo8L3N2Zz4K" alt="Cofinavit" />
+          </div>
+          <span class="bank-tag">Cofinavit · Apoyo Infonavit</span>
+        </div>
+      </div>
+    
+
+      <div class="credit-perks">
+        <div class="credit-perk"><span class="check">✓</span><span>Precalificación bancaria y esquema Cofinavit</span></div>
+        <div class="credit-perk"><span class="check">✓</span><span>Integración de expediente y avalúo certificado</span></div>
+        <div class="credit-perk"><span class="check">✓</span><span>Acompañamiento personalizado hasta firma en notaría</span></div>
+      </div>
+    </section>
+
+    <!-- CARRUSELES POR ÁREA -->
+    <div id="carousels-root"></div>
+
+    <!-- CONTACTO DIRECTO WHATSAPP -->
+    <section id="sec-contacto" class="contact-section">
+      <div class="contact-sec-header">
+        <div>
+          <div class="sec-kicker" style="color: #15803d;">Atención Personalizada · Informes y Citas</div>
+          <h2 class="contact-sec-title">Contacto Directo por WhatsApp</h2>
+          <p class="contact-sec-desc">
+            ¿Te gustaría conocer el departamento en persona o revisar el avalúo, predial y escrituras? Escríbenos directamente por WhatsApp:
+          </p>
+        </div>
+        <div class="credit-price-tag">
+          <div class="lbl">Valor de la Propiedad</div>
+          <div class="val">$11,867,000.00 MXN</div>
+        </div>
+      </div>
+
+      <div class="contact-cards-grid">
+        <a href="https://wa.me/525518441995?text=Hola%20Bernardo,%20me%20interesa%20el%20departamento%20en%20venta%20en%20Fuente%20de%20Molinos%2043%20Depto%20602,%20Lomas%20de%20Tecamachalco%20($11,867,000%20MXN)." target="_blank" rel="noopener" class="wa-card-large"><div class="wa-card-left"><span class="wa-svg-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.83-.11-.42-.13-.97-.31-1.67-.61-2.94-1.27-4.86-4.23-5.01-4.43-.15-.2-1.2-1.59-1.2-3.04 0-1.45.76-2.16 1.03-2.46.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.24.59.83 2.04.9 2.19.07.15.12.32.02.52-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.61.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.31 2.38 1.46.3.15.47.12.64-.07.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.49.22.57.35.07.12.07.72-.17 1.4z"/></svg></span><span class="wa-btn-meta"><span class="wa-btn-name">Bernardo</span><span class="wa-btn-phone">55 1844 1995</span></span></div><span class="wa-card-cta">Enviar WhatsApp →</span></a>
+        <a href="https://wa.me/525517263669?text=Hola%20Diego,%20me%20interesa%20el%20departamento%20en%20venta%20en%20Fuente%20de%20Molinos%2043%20Depto%20602,%20Lomas%20de%20Tecamachalco%20($11,867,000%20MXN)." target="_blank" rel="noopener" class="wa-card-large"><div class="wa-card-left"><span class="wa-svg-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.83-.11-.42-.13-.97-.31-1.67-.61-2.94-1.27-4.86-4.23-5.01-4.43-.15-.2-1.2-1.59-1.2-3.04 0-1.45.76-2.16 1.03-2.46.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.24.59.83 2.04.9 2.19.07.15.12.32.02.52-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.61.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.31 2.38 1.46.3.15.47.12.64-.07.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.49.22.57.35.07.12.07.72-.17 1.4z"/></svg></span><span class="wa-btn-meta"><span class="wa-btn-name">Diego</span><span class="wa-btn-phone">55 1726 3669</span></span></div><span class="wa-card-cta">Enviar WhatsApp →</span></a>
+      </div>
+    </section>
+
+    <!-- DESCARGA PDF -->
+    <section class="footer-card">
+      <div>
+        <div class="sec-kicker">Documentación Completa</div>
+        <h3>Brochure Descargable en PDF (31 Fotos Retocadas + Ficha y Avalúo)</h3>
+        <p>Descarga el documento editorial en formato PDF listo para enviar por WhatsApp, correo electrónico o imprimir.</p>
+      </div>
+      <a href="Brochure_Depa_Tecamachalco_Lomas_de_Tecamachalco.pdf?v=20261123_v1" target="_blank" download class="btn-pdf" style="padding: 11px 20px; font-size: 13px;">
+        📄 Descargar Brochure en PDF
+      </a>
+    </section>
+
+  </main>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">Cerrar pantalla completa ✕</button>
+    <img id="lightbox-img" src="" alt="" />
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+
+  <script>
+    const sections = [
+  {
+    "id": "sec-vestibulo",
+    "nav": "1. Vestíbulo",
+    "kicker": "Área 01 · Acceso Directo y Recibidor",
+    "title": "Vestíbulo Principal con Acceso Directo por Elevador",
+    "desc": "Elevador directo al departamento que abre hacia un elegante recibidor en pisos de mármol, lambrín de caoba y puertas francesas de madera con cristal biselado.",
+    "slides": [
+      {
+        "src": "02_vestibulo_puerta_principal.jpg",
+        "title": "Recibidor y Acceso Principal",
+        "caption": "Puerta principal de alta seguridad, lambrín en madera de caoba y piso de mármol beige en espiga."
+      },
+      {
+        "src": "03_vestibulo_puertas_francesas.jpg",
+        "title": "Puertas Francesas hacia la Estancia",
+        "caption": "Elegantes puertas dobles en madera y cristal biselado que enmarcan la entrada a la sala principal."
+      },
+      {
+        "src": "04_recibidor_amplio.jpg",
+        "title": "Distribución del Vestíbulo y Flujo Social",
+        "caption": "Conexión cómoda e independiente tanto hacia el área social como hacia el antecomedor."
+      }
+    ]
+  },
+  {
+    "id": "sec-estancia",
+    "nav": "2. Estancia y Comedor",
+    "kicker": "Área 02 · Estancia Panorámica en Una Sola Planta",
+    "title": "Gran Sala con Candil, Comedor, Estudio y Ventanales Arbolados",
+    "desc": "Extraordinaria amplitud social con ventanales panorámicos de lado a lado con vista verde a Tecamachalco, mueble vitrina empotrado de madera y zona de estudio.",
+    "slides": [
+      {
+        "src": "07_estancia_panoramica_amplia.jpg",
+        "title": "Gran Estancia Social Panorámica",
+        "caption": "Vista general de sala formal, zona de estar y ventanales panorámicos bañados en luz natural."
+      },
+      {
+        "src": "05_sala_principal_candil.jpg",
+        "title": "Sala Formal con Candil de Cristal",
+        "caption": "Amplio salón con candil clásico de cristal, credenza lateral y muros ideales para galería de arte."
+      },
+      {
+        "src": "06_sala_perspectiva_espejo.jpg",
+        "title": "Sala hacia Vestíbulo y Muro de Espejos",
+        "caption": "Perspectiva hacia las puertas de caoba, espejo de piso a techo y gran espacio para muebles de sala."
+      },
+      {
+        "src": "08_estancia_ventanal_arbolado.jpg",
+        "title": "Estar Principal y Vista Arbolada",
+        "caption": "Ventanales horizontales con cortineros traslúcidos y vista directa a las copas de los árboles."
+      },
+      {
+        "src": "09_comedor_principal.jpg",
+        "title": "Área de Comedor y Concepto Abierto",
+        "caption": "Espacio holgado para comedor de gran formato integrado con la estancia y la vitrina de madera."
+      },
+      {
+        "src": "10_transicion_marmol_estancia.jpg",
+        "title": "Galería en Mármol hacia Recibidor",
+        "caption": "Transición arquitectónica en mármol pulido entre el vestíbulo de entrada y la estancia."
+      },
+      {
+        "src": "11_estudio_rincon_ventanal.jpg",
+        "title": "Rincón de Estudio y Biblioteca",
+        "caption": "Librero esquinero empotrado en madera junto al gran ventanal con abundante iluminación natural."
+      }
+    ]
+  },
+  {
+    "id": "sec-visitas",
+    "nav": "3. Medio Baño y Antecomedor",
+    "kicker": "Área 03 · Medio Baño de Visitas y Desayunador",
+    "title": "Tocador en Mármol de Visitas y Antecomedor en Madera Cálida",
+    "desc": "Medio baño de visitas de generoso tamaño junto al vestíbulo y acogedor antecomedor conectado directamente con la cocina.",
+    "slides": [
+      {
+        "src": "12_medio_bano_visitas.jpg",
+        "title": "Medio Baño de Visitas en Mármol y Caoba",
+        "caption": "Extensa cubierta de mármol beige, gabinete de madera oscura, gran espejo enmarcado y piso de mármol."
+      },
+      {
+        "src": "13_antecomedor_madera.jpg",
+        "title": "Antecomedor / Desayunador Familiar",
+        "caption": "Acabados cálidos en madera, espejo en arco, candil central e iluminación directa."
+      },
+      {
+        "src": "14_conexion_antecomedor_cocina.jpg",
+        "title": "Conexión Fluida hacia la Cocina",
+        "caption": "Paso directo e inmediato entre el antecomedor y la cocina integral."
+      }
+    ]
+  },
+  {
+    "id": "sec-cocina",
+    "nav": "4. Cocina y Servicio",
+    "kicker": "Área 04 · Gastronomía, Elevador de Servicio y Lavandería",
+    "title": "Cocina Integral Amplia, Alacena Walk-In y Zona de Servicio Completa",
+    "desc": "Cocina longitudinal muy espaciosa con elevador de servicio que llega directo a la puerta de la cocina, alacena walk-in, cuarto de lavado ventilado y cuarto de servicio con baño completo.",
+    "slides": [
+      {
+        "src": "15_cocina_integral_completa.jpg",
+        "title": "Cocina Integral · Vista Longitudinal",
+        "caption": "Doble frente de alacenas blancas, doble horno empotrado, amplia circulación en mármol y ventanal exterior."
+      },
+      {
+        "src": "16_cocina_tarja_y_servicio.jpg",
+        "title": "Área de Tarja, Lavavajillas y Acceso de Servicio",
+        "caption": "Tarja doble bajo ventana panorámica y puerta directa hacia lavandería y elevador de servicio."
+      },
+      {
+        "src": "17_alacena_despensa.jpg",
+        "title": "Alacena Walk-In de Piso a Techo",
+        "caption": "Despensa independiente con amplia estantería organizada de piso a techo dentro de la cocina."
+      },
+      {
+        "src": "18_cuarto_lavado.jpg",
+        "title": "Cuarto de Lavado Ventilado",
+        "caption": "Espacio independiente con instalaciones para lavadora y secadora, calentador y gran ventanal."
+      },
+      {
+        "src": "19_cuarto_de_servicio.jpg",
+        "title": "Cuarto de Servicio con Estantería y Ventana",
+        "caption": "Habitación de servicio amplia y muy iluminada con clóset de madera y estantería auxiliar."
+      },
+      {
+        "src": "20_bano_de_servicio.jpg",
+        "title": "Baño Completo de Servicio",
+        "caption": "Baño de servicio independiente con lavabo, espejo y ventilación natural directa."
+      }
+    ]
+  },
+  {
+    "id": "sec-rec1",
+    "nav": "5. Suite Junior 1",
+    "kicker": "Área 05 · Zona Privada · Primera Suite",
+    "title": "Pasillo en Mármol y Recámara 1 con Vestidor y Baño Completo",
+    "desc": "Pasillo privado con pisos de mármol y vitrina para blancos que da acceso a la primera recámara tipo suite con amplios ventanales, vestidor de madera y baño propio.",
+    "slides": [
+      {
+        "src": "21_pasillo_recamaras_marmol.jpg",
+        "title": "Pasillo Privado en Mármol y Clóset de Blancos",
+        "caption": "Acceso independiente hacia las 3 recámaras con piso de mármol pulido y mueble vitrina."
+      },
+      {
+        "src": "22_recamara_1_amplia.jpg",
+        "title": "Recámara 1 · Amplitud y Ventanal Lateral",
+        "caption": "Gran espacio con cortinas plisadas de piso a techo, moldura en cabecera y alfombra limpia."
+      },
+      {
+        "src": "23_recamara_1_frente.jpg",
+        "title": "Recámara 1 · Vista hacia Vestidor y Baño",
+        "caption": "Distribución funcional con acceso directo e integrado a su vestidor privado y baño."
+      },
+      {
+        "src": "24_recamara_1_vestidor.jpg",
+        "title": "Vestidor Privado en Madera (Suite 1)",
+        "caption": "Carpintería en madera natural con cajoneras, colgadores dobles y maleteros superiores."
+      },
+      {
+        "src": "25_recamara_1_bano.jpg",
+        "title": "Baño Completo Privado (Suite 1)",
+        "caption": "Mueble lavabo sobre cubierta de mármol, gran espejo y ducha cerrada con cancel de cristal."
+      }
+    ]
+  },
+  {
+    "id": "sec-rec2",
+    "nav": "6. Suite Junior 2",
+    "kicker": "Área 06 · Zona Privada · Segunda Suite",
+    "title": "Recámara 2 (Capacidad Dos Camas) con Vestidor y Baño Remodelado",
+    "desc": "Generosa habitación secundaria con capacidad para dos camas y escritorio, amplio ventanal horizontal, vestidor walk-in con repisas de cristal y baño completo con cancel templado.",
+    "slides": [
+      {
+        "src": "26_recamara_2_doble.jpg",
+        "title": "Recámara 2 · Capacidad para Dos Camas y Escritorio",
+        "caption": "Espacio holgado para dos camas, muro con estantería abierta, espejo de cuerpo completo y área de estudio."
+      },
+      {
+        "src": "27_recamara_2_ventanal.jpg",
+        "title": "Recámara 2 · Perspectiva al Ventanal Panorámico",
+        "caption": "Excelente iluminación natural con ventanal horizontal y persianas verticales."
+      },
+      {
+        "src": "28_recamara_2_vestidor.jpg",
+        "title": "Vestidor Walk-In Independiente (Suite 2)",
+        "caption": "Amplio vestidor con ropería en madera sólida y entrepaños combinados de madera y cristal."
+      },
+      {
+        "src": "29_recamara_2_bano_completo.jpg",
+        "title": "Baño Completo Privado (Suite 2)",
+        "caption": "Cubierta de mármol con lavabo ovalín, gabinete de madera, espejo amplio y cancel de cristal templado."
+      }
+    ]
+  },
+  {
+    "id": "sec-master",
+    "nav": "7. Master Suite",
+    "kicker": "Área 07 · Zona Privada · Recámara Principal",
+    "title": "Master Suite Panorámica con Vestidor y Baño de Lujo Arbolado",
+    "desc": "Espectacular suite principal de grandes dimensiones con doble frente de ventanales, sala/escritorio integrado, vestidor privado y un extraordinario baño con vista verde a los árboles.",
+    "slides": [
+      {
+        "src": "30_recamara_principal_panoramica.jpg",
+        "title": "Recámara Principal · Vista Panorámica",
+        "caption": "Gran suite para cama King Size con vitrina de espejos, cortinas de piso a techo y acceso al baño."
+      },
+      {
+        "src": "31_recamara_principal_hacia_vestidor.jpg",
+        "title": "Recámara Principal · Área de Estar y Mueble Empotrado",
+        "caption": "Mueble blanco de entretenimiento y guardado de piso a techo con zona de lectura y vestidor."
+      },
+      {
+        "src": "32_bano_principal_panoramico.jpg",
+        "title": "Baño Principal Panorámico con Vista Arbolada",
+        "caption": "Enorme cubierta de mármol bajo ventanal con vista a los árboles, gabinetes de caoba y regadera con cancel templado."
+      }
+    ]
+  }
+];
+    const CACHE_BUST = '?v=20261123_v1';
+    const state = {};
+
+    function renderCarousels() {
+      const root = document.getElementById('carousels-root');
+      root.innerHTML = sections.map((sec, sIdx) => {
+        state[sIdx] = 0;
+        const first = sec.slides[0];
+        const hasMultiple = sec.slides.length > 1;
+        return `
+          <section id="${sec.id}" class="carousel-section">
+            <div class="sec-header">
+              <div class="sec-kicker">${sec.kicker}</div>
+              <h2 class="sec-title">${sec.title}</h2>
+              <p class="sec-desc">${sec.desc}</p>
+            </div>
+            <div class="carousel-split">
+              <div class="stage-column">
+                <div class="stage-frame" data-sidx="${sIdx}">
+                  ${hasMultiple ? `<button class="stage-arrow prev" onclick="prevSlide(${sIdx})" aria-label="Foto anterior">‹</button>` : ''}
+                  <img id="main-img-${sIdx}" src="${first.src}${CACHE_BUST}" alt="${first.title}" onclick="openLightbox(this.src, document.getElementById('title-${sIdx}').textContent)" />
+                  ${hasMultiple ? `<button class="stage-arrow next" onclick="nextSlide(${sIdx})" aria-label="Siguiente foto">›</button>` : ''}
+                  <span class="zoom-hint">🔍 Ampliar</span>
+                </div>
+                <div class="stage-caption-bar">
+                  <div class="stage-caption-text">
+                    <h3 id="title-${sIdx}">${first.title}</h3>
+                    <p id="caption-${sIdx}">${first.caption}</p>
+                  </div>
+                  <span id="counter-${sIdx}" class="stage-counter">1 / ${sec.slides.length}</span>
+                </div>
+              </div>
+              <div class="selector-column">
+                <div class="selector-header">
+                  <span>Selecciona vista (${sec.slides.length})</span>
+                  ${hasMultiple ? `<div class="selector-nav-btns"><button class="btn-mini" onclick="prevSlide(${sIdx})">← Ant.</button><button class="btn-mini" onclick="nextSlide(${sIdx})">Sig. →</button></div>` : ''}
+                </div>
+                <div class="thumb-list" id="thumblist-${sIdx}">
+                  ${sec.slides.map((sl, i) => `
+                    <button id="thumb-${sIdx}-${i}" class="thumb-row ${i === 0 ? 'active' : ''}" onclick="goToSlide(${sIdx}, ${i})">
+                      <div class="thumb-img-box"><img src="${sl.src}${CACHE_BUST}" alt="${sl.title}" loading="lazy" /></div>
+                      <div class="thumb-info">
+                        <div class="thumb-num">Vista ${String(i + 1).padStart(2, '0')}</div>
+                        <div class="thumb-title">${sl.title}</div>
+                        <div class="thumb-sub">${sl.caption}</div>
+                      </div>
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+          </section>
+        `;
+      }).join('');
+
+      document.querySelectorAll('.stage-frame').forEach(frame => {
+        let startX = 0, startY = 0;
+        const sIdx = Number(frame.dataset.sidx);
+        frame.addEventListener('touchstart', (e) => {
+          if (e.touches.length === 1) { startX = e.touches[0].clientX; startY = e.touches[0].clientY; }
+        }, { passive: true });
+        frame.addEventListener('touchend', (e) => {
+          if (e.changedTouches.length === 1) {
+            const dx = e.changedTouches[0].clientX - startX;
+            const dy = e.changedTouches[0].clientY - startY;
+            if (Math.abs(dx) > 42 && Math.abs(dx) > Math.abs(dy)) {
+              if (dx < 0) nextSlide(sIdx); else prevSlide(sIdx);
+            }
+          }
+        }, { passive: true });
+      });
+    }
+
+    function updateSlideUI(sIdx) {
+      const sec = sections[sIdx], idx = state[sIdx], slide = sec.slides[idx];
+      const img = document.getElementById(`main-img-${sIdx}`);
+      img.src = slide.src + CACHE_BUST; img.alt = slide.title;
+      document.getElementById(`title-${sIdx}`).textContent = slide.title;
+      document.getElementById(`caption-${sIdx}`).textContent = slide.caption;
+      document.getElementById(`counter-${sIdx}`).textContent = `${idx + 1} / ${sec.slides.length}`;
+      sec.slides.forEach((_, i) => document.getElementById(`thumb-${sIdx}-${i}`).classList.toggle('active', i === idx));
+    }
+    function nextSlide(sIdx) { state[sIdx] = (state[sIdx] + 1) % sections[sIdx].slides.length; updateSlideUI(sIdx); }
+    function prevSlide(sIdx) { state[sIdx] = (state[sIdx] - 1 + sections[sIdx].slides.length) % sections[sIdx].slides.length; updateSlideUI(sIdx); }
+    function goToSlide(sIdx, i) { state[sIdx] = i; updateSlideUI(sIdx); }
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').textContent = caption;
+      document.getElementById('lightbox').classList.add('open');
+    }
+    function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+    renderCarousels();
+  </script>
+</body>
+</html>

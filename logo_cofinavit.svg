@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 54" width="340" height="54">
+  <!-- Emblem: Red Infonavit-style geometric house/figure -->
+  <g transform="translate(2, 1)">
+    <rect x="0" y="0" width="52" height="52" rx="11" fill="#D3122A"/>
+    <!-- Roof / Chevron -->
+    <path d="M8 24 L26 8.5 L44 24 L39 29 L26 17.5 L13 29 Z" fill="#FFFFFF"/>
+    <!-- Central person / pillar -->
+    <circle cx="26" cy="26" r="4.2" fill="#FFFFFF"/>
+    <path d="M15 43 L19.5 32 L32.5 32 L37 43 H30.8 L28.8 37 H23.2 L21.2 43 Z" fill="#FFFFFF"/>
+  </g>
+  <!-- Wordmark filling full width -->
+  <text x="64" y="34" font-family="'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="1.2" fill="#D3122A">COFINAVIT</text>
+  <text x="66" y="49" font-family="'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="700" letter-spacing="3.6" fill="#44403C">INFONAVIT + BANCO</text>
+</svg>
